@@ -1,0 +1,114 @@
+{
+"date"         : "1939-05-22",
+"local"        : "27510",
+"time"         : "10:30:38",
+"SWOL" : {
+"lvl"          : "429",
+"person" : {
+"gender"       : "f",
+"login"        : "asbe6036",
+"phone"        : "(320) 629-6977",
+"text_content" : "paityn"
+},"person" : {
+"gender"       : "f",
+"login"        : "virginiacha1461",
+"phone"        : "(239) 306-5603",
+"text_content" : "paityn"
+},"person" : {
+"gender"       : "f",
+"login"        : "hezekiahcl4265",
+"phone"        : "(434) 636-7601",
+"text_content" : "paityn"
+}},"SWOL" : {
+"lvl"          : "5193",
+"person" : {
+"gender"       : "m",
+"login"        : "lelsantiag5263",
+"phone"        : "(615) 387-7342",
+"text_content" : "mina"
+},"person" : {
+"gender"       : "m",
+"login"        : "addisonmcmil8741",
+"phone"        : "(978) 851-1834",
+"text_content" : "mina"
+},"person" : {
+"gender"       : "m",
+"login"        : "irisantos1872",
+"phone"        : "(225) 563-5523",
+"text_content" : "mina"
+}},"SWOL" : {
+"lvl"          : "6678",
+"person" : {
+"gender"       : "m",
+"login"        : "mariannagib2268",
+"phone"        : "(240) 587-9712",
+"text_content" : "uriel"
+},"person" : {
+"gender"       : "m",
+"login"        : "tracnieves3697",
+"phone"        : "(863) 846-5073",
+"text_content" : "uriel"
+},"person" : {
+"gender"       : "m",
+"login"        : "brre9012",
+"phone"        : "(503) 525-6275",
+"text_content" : "uriel"
+}},"TRUUUU" : {
+"trueness"     : "real",
+"fake" : {
+"area-lat"     : "39.13",
+"area-long"    : "-95.65",
+"place"        : "kansas",
+"text_content" : "Facilisis!"
+},"fake" : {
+"area-lat"     : "41.62",
+"area-long"    : "-88.11",
+"place"        : "illinois",
+"text_content" : "Tempus."
+},"fake" : {
+"area-lat"     : "38.17",
+"area-long"    : "-84.53",
+"place"        : "kentucky",
+"text_content" : "Nec."
+}},"TRUUUU" : {
+"trueness"     : "fake",
+"fake" : {
+"area-lat"     : "30.36",
+"area-long"    : "-97.79",
+"place"        : "texas",
+"text_content" : "Et."
+},"fake" : {
+"area-lat"     : "44.24",
+"area-long"    : "-72.6",
+"place"        : "vermont",
+"text_content" : "Mus?"
+}},"TRUUUU" : {
+"trueness"     : "real",
+"fake" : {
+"area-lat"     : "42.97",
+"area-long"    : "-85.71",
+"place"        : "michigan",
+"text_content" : "Ultricies."
+},"fake" : {
+"area-lat"     : "25.81",
+"area-long"    : "-80.27",
+"place"        : "florida",
+"text_content" : "Metus."
+},"fake" : {
+"area-lat"     : "38.07",
+"area-long"    : "-84.5",
+"place"        : "kentucky",
+"text_content" : "Feugiat!"
+}},"Bling" : {
+"type"         : "other",
+"text_content" : "Tellus."
+},"Bling" : {
+"type"         : "other",
+"text_content" : "Curae;."
+},"Hotline" : {
+"type"         : "landline",
+"text_content" : "(636) 842-0762"
+},"Hotline" : {
+"type"         : "landline",
+"text_content" : "(551) 346-9596"
+}}

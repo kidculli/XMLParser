@@ -1,0 +1,197 @@
+\hypertarget{class_dom_builder}{}\section{Dom\+Builder Class Reference}
+\label{class_dom_builder}\index{Dom\+Builder@{Dom\+Builder}}
+
+
+{\ttfamily \#include $<$dynamic\+\_\+dom.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_dom_builder_a653b722025dbd019c553c41e1be4d930}{Dom\+Builder} ()
+\item 
+\hyperlink{class_dom_builder_a6a46278e21f7780968377db97261257f}{$\sim$\+Dom\+Builder} ()
+\item 
+void \hyperlink{class_dom_builder_aeafe07c1532c386215f798b32086786a}{add\+\_\+root} (string name)
+\item 
+void \hyperlink{class_dom_builder_ae5e0f25b9b8361af412d3dea4e85f6d1}{output\+\_\+dom} ()
+\item 
+void \hyperlink{class_dom_builder_a1ecf962dab7557dfc29fa943b3d16948}{add\+\_\+element} (string elem\+\_\+name, string parent, string value)
+\item 
+void \hyperlink{class_dom_builder_a318024efd9849977c8fc357df0559993}{add\+\_\+attribute} (string attr\+\_\+name, string attr\+\_\+val, string elem\+\_\+name)
+\item 
+void \hyperlink{class_dom_builder_a6f8d4273e31e64720ea8ec7da2679d7a}{remove\+\_\+child} (string elem\+\_\+name)
+\item 
+bool \hyperlink{class_dom_builder_a4f6d575e60886c8ccd36ed2c957a2dea}{check\+\_\+root} ()
+\item 
+void \hyperlink{class_dom_builder_a1ce1e09ec2f69f6b63897a46c9ec054d}{remove\+\_\+root} ()
+\item 
+void \hyperlink{class_dom_builder_aeb5b56eb55c07ce67884b5e0e440ce05}{remove\+\_\+attribute} (string elem\+\_\+name, string attr\+\_\+name)
+\item 
+void \hyperlink{class_dom_builder_a536691cc93a82974cf2f4414c07dfbba}{output\+\_\+alpha} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+D\+O\+M\+Document $\ast$ \hyperlink{class_dom_builder_acc21c1003db9bc071110348ea7a7bc81}{doc}
+\item 
+D\+O\+M\+L\+S\+Serializer $\ast$ \hyperlink{class_dom_builder_ad4ffb1b4a9969e681fe3da7aacc7df4a}{the\+Serializer}
+\item 
+D\+O\+M\+L\+S\+Output $\ast$ \hyperlink{class_dom_builder_aacc27ad26c90a3e32969f4b03ab23345}{the\+Output\+Desc}
+\item 
+D\+O\+M\+Tree\+Walker $\ast$ \hyperlink{class_dom_builder_ae1ab2463abc4a3f5e86d0a6b6e3f75e8}{walker} = N\+U\+L\+L
+\item 
+bool \hyperlink{class_dom_builder_a251a3bfecfa2bdc3c6f726fa273f162d}{has\+\_\+root} = false
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This class allows the user to create a Dom Document dynamically 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_dom_builder_a653b722025dbd019c553c41e1be4d930}{}\index{Dom\+Builder@{Dom\+Builder}!Dom\+Builder@{Dom\+Builder}}
+\index{Dom\+Builder@{Dom\+Builder}!Dom\+Builder@{Dom\+Builder}}
+\subsubsection[{Dom\+Builder()}]{\setlength{\rightskip}{0pt plus 5cm}Dom\+Builder\+::\+Dom\+Builder (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_dom_builder_a653b722025dbd019c553c41e1be4d930}
+Default constructor that sets up Dom serializer and output \hypertarget{class_dom_builder_a6a46278e21f7780968377db97261257f}{}\index{Dom\+Builder@{Dom\+Builder}!````~Dom\+Builder@{$\sim$\+Dom\+Builder}}
+\index{````~Dom\+Builder@{$\sim$\+Dom\+Builder}!Dom\+Builder@{Dom\+Builder}}
+\subsubsection[{$\sim$\+Dom\+Builder()}]{\setlength{\rightskip}{0pt plus 5cm}Dom\+Builder\+::$\sim$\+Dom\+Builder (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_dom_builder_a6a46278e21f7780968377db97261257f}
+Destructor method used to free resources 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_dom_builder_a318024efd9849977c8fc357df0559993}{}\index{Dom\+Builder@{Dom\+Builder}!add\+\_\+attribute@{add\+\_\+attribute}}
+\index{add\+\_\+attribute@{add\+\_\+attribute}!Dom\+Builder@{Dom\+Builder}}
+\subsubsection[{add\+\_\+attribute(string attr\+\_\+name, string attr\+\_\+val, string elem\+\_\+name)}]{\setlength{\rightskip}{0pt plus 5cm}void Dom\+Builder\+::add\+\_\+attribute (
+\begin{DoxyParamCaption}
+\item[{string}]{attr\+\_\+name, }
+\item[{string}]{attr\+\_\+val, }
+\item[{string}]{elem\+\_\+name}
+\end{DoxyParamCaption}
+)}\label{class_dom_builder_a318024efd9849977c8fc357df0559993}
+Add attribute name to an element 
+\begin{DoxyParams}{Parameters}
+{\em attr\+\_\+name} & name of attr to add \\
+\hline
+{\em attr\+\_\+val} & value of attr to add \\
+\hline
+{\em elem\+\_\+name} & name of element to add attr to \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_dom_builder_a1ecf962dab7557dfc29fa943b3d16948}{}\index{Dom\+Builder@{Dom\+Builder}!add\+\_\+element@{add\+\_\+element}}
+\index{add\+\_\+element@{add\+\_\+element}!Dom\+Builder@{Dom\+Builder}}
+\subsubsection[{add\+\_\+element(string elem\+\_\+name, string parent, string value)}]{\setlength{\rightskip}{0pt plus 5cm}void Dom\+Builder\+::add\+\_\+element (
+\begin{DoxyParamCaption}
+\item[{string}]{elem\+\_\+name, }
+\item[{string}]{parent, }
+\item[{string}]{value}
+\end{DoxyParamCaption}
+)}\label{class_dom_builder_a1ecf962dab7557dfc29fa943b3d16948}
+Add element to the Dom tree 
+\begin{DoxyParams}{Parameters}
+{\em elem\+\_\+name} & name of element to be created and added \\
+\hline
+{\em parent} & name of parent elem \\
+\hline
+{\em value} & of element \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_dom_builder_aeafe07c1532c386215f798b32086786a}{}\index{Dom\+Builder@{Dom\+Builder}!add\+\_\+root@{add\+\_\+root}}
+\index{add\+\_\+root@{add\+\_\+root}!Dom\+Builder@{Dom\+Builder}}
+\subsubsection[{add\+\_\+root(string name)}]{\setlength{\rightskip}{0pt plus 5cm}void Dom\+Builder\+::add\+\_\+root (
+\begin{DoxyParamCaption}
+\item[{string}]{name}
+\end{DoxyParamCaption}
+)}\label{class_dom_builder_aeafe07c1532c386215f798b32086786a}
+Add root element to D\+O\+M 
+\begin{DoxyParams}{Parameters}
+{\em name} & name of new root element \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_dom_builder_a4f6d575e60886c8ccd36ed2c957a2dea}{}\index{Dom\+Builder@{Dom\+Builder}!check\+\_\+root@{check\+\_\+root}}
+\index{check\+\_\+root@{check\+\_\+root}!Dom\+Builder@{Dom\+Builder}}
+\subsubsection[{check\+\_\+root()}]{\setlength{\rightskip}{0pt plus 5cm}bool Dom\+Builder\+::check\+\_\+root (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_dom_builder_a4f6d575e60886c8ccd36ed2c957a2dea}
+\begin{DoxyReturn}{Returns}
+true if root exists false otherwise 
+\end{DoxyReturn}
+\hypertarget{class_dom_builder_a536691cc93a82974cf2f4414c07dfbba}{}\index{Dom\+Builder@{Dom\+Builder}!output\+\_\+alpha@{output\+\_\+alpha}}
+\index{output\+\_\+alpha@{output\+\_\+alpha}!Dom\+Builder@{Dom\+Builder}}
+\subsubsection[{output\+\_\+alpha()}]{\setlength{\rightskip}{0pt plus 5cm}void Dom\+Builder\+::output\+\_\+alpha (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_dom_builder_a536691cc93a82974cf2f4414c07dfbba}
+outputs D\+O\+M nodes alphabetically by element name \hypertarget{class_dom_builder_ae5e0f25b9b8361af412d3dea4e85f6d1}{}\index{Dom\+Builder@{Dom\+Builder}!output\+\_\+dom@{output\+\_\+dom}}
+\index{output\+\_\+dom@{output\+\_\+dom}!Dom\+Builder@{Dom\+Builder}}
+\subsubsection[{output\+\_\+dom()}]{\setlength{\rightskip}{0pt plus 5cm}void Dom\+Builder\+::output\+\_\+dom (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_dom_builder_ae5e0f25b9b8361af412d3dea4e85f6d1}
+Outputs the Dom to std\+\_\+out; \hypertarget{class_dom_builder_aeb5b56eb55c07ce67884b5e0e440ce05}{}\index{Dom\+Builder@{Dom\+Builder}!remove\+\_\+attribute@{remove\+\_\+attribute}}
+\index{remove\+\_\+attribute@{remove\+\_\+attribute}!Dom\+Builder@{Dom\+Builder}}
+\subsubsection[{remove\+\_\+attribute(string elem\+\_\+name, string attr\+\_\+name)}]{\setlength{\rightskip}{0pt plus 5cm}void Dom\+Builder\+::remove\+\_\+attribute (
+\begin{DoxyParamCaption}
+\item[{string}]{elem\+\_\+name, }
+\item[{string}]{attr\+\_\+name}
+\end{DoxyParamCaption}
+)}\label{class_dom_builder_aeb5b56eb55c07ce67884b5e0e440ce05}
+removes attribute 
+\begin{DoxyParams}{Parameters}
+{\em name} & of element \\
+\hline
+{\em attr\+\_\+name} & name of attribute to remove from element \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_dom_builder_a6f8d4273e31e64720ea8ec7da2679d7a}{}\index{Dom\+Builder@{Dom\+Builder}!remove\+\_\+child@{remove\+\_\+child}}
+\index{remove\+\_\+child@{remove\+\_\+child}!Dom\+Builder@{Dom\+Builder}}
+\subsubsection[{remove\+\_\+child(string elem\+\_\+name)}]{\setlength{\rightskip}{0pt plus 5cm}void Dom\+Builder\+::remove\+\_\+child (
+\begin{DoxyParamCaption}
+\item[{string}]{elem\+\_\+name}
+\end{DoxyParamCaption}
+)}\label{class_dom_builder_a6f8d4273e31e64720ea8ec7da2679d7a}
+removes a node and all it\textquotesingle{}s children from the D\+O\+M 
+\begin{DoxyParams}{Parameters}
+{\em elem\+\_\+name} & name of element to remove \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_dom_builder_a1ce1e09ec2f69f6b63897a46c9ec054d}{}\index{Dom\+Builder@{Dom\+Builder}!remove\+\_\+root@{remove\+\_\+root}}
+\index{remove\+\_\+root@{remove\+\_\+root}!Dom\+Builder@{Dom\+Builder}}
+\subsubsection[{remove\+\_\+root()}]{\setlength{\rightskip}{0pt plus 5cm}void Dom\+Builder\+::remove\+\_\+root (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_dom_builder_a1ce1e09ec2f69f6b63897a46c9ec054d}
+removes root element, resets D\+O\+M 
+
+\subsection{Member Data Documentation}
+\hypertarget{class_dom_builder_acc21c1003db9bc071110348ea7a7bc81}{}\index{Dom\+Builder@{Dom\+Builder}!doc@{doc}}
+\index{doc@{doc}!Dom\+Builder@{Dom\+Builder}}
+\subsubsection[{doc}]{\setlength{\rightskip}{0pt plus 5cm}D\+O\+M\+Document$\ast$ Dom\+Builder\+::doc\hspace{0.3cm}{\ttfamily [private]}}\label{class_dom_builder_acc21c1003db9bc071110348ea7a7bc81}
+The Xerces Dom document used for building the D\+O\+M \hypertarget{class_dom_builder_a251a3bfecfa2bdc3c6f726fa273f162d}{}\index{Dom\+Builder@{Dom\+Builder}!has\+\_\+root@{has\+\_\+root}}
+\index{has\+\_\+root@{has\+\_\+root}!Dom\+Builder@{Dom\+Builder}}
+\subsubsection[{has\+\_\+root}]{\setlength{\rightskip}{0pt plus 5cm}bool Dom\+Builder\+::has\+\_\+root = false\hspace{0.3cm}{\ttfamily [private]}}\label{class_dom_builder_a251a3bfecfa2bdc3c6f726fa273f162d}
+If root has been created has\+\_\+root will be true otherwise if root has not yet been created or has been deleted it will be false \hypertarget{class_dom_builder_aacc27ad26c90a3e32969f4b03ab23345}{}\index{Dom\+Builder@{Dom\+Builder}!the\+Output\+Desc@{the\+Output\+Desc}}
+\index{the\+Output\+Desc@{the\+Output\+Desc}!Dom\+Builder@{Dom\+Builder}}
+\subsubsection[{the\+Output\+Desc}]{\setlength{\rightskip}{0pt plus 5cm}D\+O\+M\+L\+S\+Output$\ast$ Dom\+Builder\+::the\+Output\+Desc\hspace{0.3cm}{\ttfamily [private]}}\label{class_dom_builder_aacc27ad26c90a3e32969f4b03ab23345}
+Xerces Output object used for setting output destination \hypertarget{class_dom_builder_ad4ffb1b4a9969e681fe3da7aacc7df4a}{}\index{Dom\+Builder@{Dom\+Builder}!the\+Serializer@{the\+Serializer}}
+\index{the\+Serializer@{the\+Serializer}!Dom\+Builder@{Dom\+Builder}}
+\subsubsection[{the\+Serializer}]{\setlength{\rightskip}{0pt plus 5cm}D\+O\+M\+L\+S\+Serializer$\ast$ Dom\+Builder\+::the\+Serializer\hspace{0.3cm}{\ttfamily [private]}}\label{class_dom_builder_ad4ffb1b4a9969e681fe3da7aacc7df4a}
+Xerces serializer object used for outputting xml \hypertarget{class_dom_builder_ae1ab2463abc4a3f5e86d0a6b6e3f75e8}{}\index{Dom\+Builder@{Dom\+Builder}!walker@{walker}}
+\index{walker@{walker}!Dom\+Builder@{Dom\+Builder}}
+\subsubsection[{walker}]{\setlength{\rightskip}{0pt plus 5cm}D\+O\+M\+Tree\+Walker$\ast$ Dom\+Builder\+::walker = N\+U\+L\+L\hspace{0.3cm}{\ttfamily [private]}}\label{class_dom_builder_ae1ab2463abc4a3f5e86d0a6b6e3f75e8}
+Xerces Tree Walker Object used for traversing D\+O\+M will be initialized after root node is created 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{dynamic__dom_8h}{dynamic\+\_\+dom.\+h}\item 
+\hyperlink{dynamic__dom_8cpp}{dynamic\+\_\+dom.\+cpp}\end{DoxyCompactItemize}

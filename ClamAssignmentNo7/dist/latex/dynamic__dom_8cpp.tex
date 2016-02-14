@@ -1,0 +1,48 @@
+\hypertarget{dynamic__dom_8cpp}{}\section{dynamic\+\_\+dom.\+cpp File Reference}
+\label{dynamic__dom_8cpp}\index{dynamic\+\_\+dom.\+cpp@{dynamic\+\_\+dom.\+cpp}}
+{\ttfamily \#include \char`\"{}dynamic\+\_\+dom.\+h\char`\"{}}\\*
+{\ttfamily \#include $<$iostream$>$}\\*
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{dynamic__dom_8cpp_acfc0c1560b0cc4c73d7c7c9f6648a466}{compare\+\_\+elem\+\_\+alpha} (D\+O\+M\+Node $\ast$first, D\+O\+M\+Node $\ast$second)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+\+: Cullin Lam \href{mailto:clam@cs.uml.edu}{\tt clam@cs.\+uml.\+edu} This file utilizes Xercesc library to create an interface for users to dynamically create a Dom object in memory
+\end{DoxyAuthor}
+Created on 2015-\/12-\/07
+
+Last Updated 2015-\/12-\/08 -\/added add\+\_\+root method -\/implemented constructor
+\begin{DoxyItemize}
+\item implemented required functions
+\item removed create\+Document with root
+\item added has\+\_\+root member
+\item added output\+\_\+alpha function
+\item reset tree walker position before use
+\begin{DoxyItemize}
+\item added destructor method 
+\end{DoxyItemize}
+\end{DoxyItemize}
+
+\subsection{Function Documentation}
+\hypertarget{dynamic__dom_8cpp_acfc0c1560b0cc4c73d7c7c9f6648a466}{}\index{dynamic\+\_\+dom.\+cpp@{dynamic\+\_\+dom.\+cpp}!compare\+\_\+elem\+\_\+alpha@{compare\+\_\+elem\+\_\+alpha}}
+\index{compare\+\_\+elem\+\_\+alpha@{compare\+\_\+elem\+\_\+alpha}!dynamic\+\_\+dom.\+cpp@{dynamic\+\_\+dom.\+cpp}}
+\subsubsection[{compare\+\_\+elem\+\_\+alpha(\+D\+O\+M\+Node $\ast$first, D\+O\+M\+Node $\ast$second)}]{\setlength{\rightskip}{0pt plus 5cm}bool compare\+\_\+elem\+\_\+alpha (
+\begin{DoxyParamCaption}
+\item[{D\+O\+M\+Node $\ast$}]{first, }
+\item[{D\+O\+M\+Node $\ast$}]{second}
+\end{DoxyParamCaption}
+)}\label{dynamic__dom_8cpp_acfc0c1560b0cc4c73d7c7c9f6648a466}
+This function is used to compare two strings alphabetically; used for sorting 
+\begin{DoxyParams}{Parameters}
+{\em first} & first item to be compared \\
+\hline
+{\em second} & second item to be compared \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if first comes before second alphabetically false otherwise 
+\end{DoxyReturn}

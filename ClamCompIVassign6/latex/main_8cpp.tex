@@ -1,0 +1,104 @@
+\hypertarget{main_8cpp}{}\section{main.\+cpp File Reference}
+\label{main_8cpp}\index{main.\+cpp@{main.\+cpp}}
+{\ttfamily \#include $<$cstdlib$>$}\\*
+{\ttfamily \#include $<$xercesc/util/\+Platform\+Utils.\+hpp$>$}\\*
+{\ttfamily \#include $<$xercesc/util/\+X\+M\+L\+String.\+hpp$>$}\\*
+{\ttfamily \#include $<$xercesc/dom/\+D\+O\+M.\+hpp$>$}\\*
+{\ttfamily \#include $<$vector$>$}\\*
+{\ttfamily \#include $<$iomanip$>$}\\*
+{\ttfamily \#include $<$algorithm$>$}\\*
+{\ttfamily \#include $<$string.\+h$>$}\\*
+{\ttfamily \#include $<$xercesc/dom/\+D\+O\+M\+Document\+Traversal.\+hpp$>$}\\*
+{\ttfamily \#include $<$xercesc/dom/\+D\+O\+M\+Tree\+Walker.\+hpp$>$}\\*
+{\ttfamily \#include $<$xercesc/dom/\+D\+O\+M\+Node.\+hpp$>$}\\*
+{\ttfamily \#include $<$xercesc/dom/\+D\+O\+M\+Node\+Iterator.\+hpp$>$}\\*
+{\ttfamily \#include $<$xercesc/util/\+Out\+Of\+Memory\+Exception.\+hpp$>$}\\*
+{\ttfamily \#include $<$xercesc/framework/\+Std\+Out\+Format\+Target.\+hpp$>$}\\*
+{\ttfamily \#include $<$xercesc/parsers/\+Xerces\+D\+O\+M\+Parser.\+hpp$>$}\\*
+{\ttfamily \#include $<$iostream.\+h$>$}\\*
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_x_str}{X\+Str}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{main_8cpp_ae617ec11710a628ecd412c46a933832c}{X}(str)~\hyperlink{class_x_str}{X\+Str}(str).unicode\+Form()
+\item 
+\#define \hyperlink{main_8cpp_afe05c676bac41355550f64ff5a162c98}{x}(str)~X\+M\+L\+String\+::transcode(str)
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{main_8cpp_acfc0c1560b0cc4c73d7c7c9f6648a466}{compare\+\_\+elem\+\_\+alpha} (D\+O\+M\+Node $\ast$first, D\+O\+M\+Node $\ast$second)
+\item 
+int \hyperlink{main_8cpp_a67f7e6bd84760abdae99f4a4697879b4}{main} (int arg\+C, char $\ast$argv\mbox{[}$\,$\mbox{]})
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+\+: Cullin Lam \href{mailto:clam@cs.uml.edu}{\tt clam@cs.\+uml.\+edu} This file utilizes Xercesc library to create a D\+O\+M object in memory and then prints out the resultant structure to stdout
+\end{DoxyAuthor}
+Created on November 18, 2015, 1\+:21 P\+M
+
+Last Updated November 19, 2015
+\begin{DoxyItemize}
+\item added calls to Serializer and Tree\+Walker 
+\end{DoxyItemize}
+
+\subsection{Macro Definition Documentation}
+\hypertarget{main_8cpp_ae617ec11710a628ecd412c46a933832c}{}\index{main.\+cpp@{main.\+cpp}!X@{X}}
+\index{X@{X}!main.\+cpp@{main.\+cpp}}
+\subsubsection[{X}]{\setlength{\rightskip}{0pt plus 5cm}\#define X(
+\begin{DoxyParamCaption}
+\item[{}]{str}
+\end{DoxyParamCaption}
+)~{\bf X\+Str}(str).unicode\+Form()}\label{main_8cpp_ae617ec11710a628ecd412c46a933832c}
+X converts a c-\/string to an X\+M\+L\+Ch$\ast$ \hypertarget{main_8cpp_afe05c676bac41355550f64ff5a162c98}{}\index{main.\+cpp@{main.\+cpp}!x@{x}}
+\index{x@{x}!main.\+cpp@{main.\+cpp}}
+\subsubsection[{x}]{\setlength{\rightskip}{0pt plus 5cm}\#define x(
+\begin{DoxyParamCaption}
+\item[{}]{str}
+\end{DoxyParamCaption}
+)~X\+M\+L\+String\+::transcode(str)}\label{main_8cpp_afe05c676bac41355550f64ff5a162c98}
+x converts a X\+M\+L\+Ch$\ast$ to a c string 
+
+\subsection{Function Documentation}
+\hypertarget{main_8cpp_acfc0c1560b0cc4c73d7c7c9f6648a466}{}\index{main.\+cpp@{main.\+cpp}!compare\+\_\+elem\+\_\+alpha@{compare\+\_\+elem\+\_\+alpha}}
+\index{compare\+\_\+elem\+\_\+alpha@{compare\+\_\+elem\+\_\+alpha}!main.\+cpp@{main.\+cpp}}
+\subsubsection[{compare\+\_\+elem\+\_\+alpha(\+D\+O\+M\+Node $\ast$first, D\+O\+M\+Node $\ast$second)}]{\setlength{\rightskip}{0pt plus 5cm}bool compare\+\_\+elem\+\_\+alpha (
+\begin{DoxyParamCaption}
+\item[{D\+O\+M\+Node $\ast$}]{first, }
+\item[{D\+O\+M\+Node $\ast$}]{second}
+\end{DoxyParamCaption}
+)}\label{main_8cpp_acfc0c1560b0cc4c73d7c7c9f6648a466}
+This function is used to compare two strings alphabetically; used for sorting 
+\begin{DoxyParams}{Parameters}
+{\em first} & first item to be compared \\
+\hline
+{\em second} & second item to be compared \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if first comes before second alphabetically false otherwise 
+\end{DoxyReturn}
+\hypertarget{main_8cpp_a67f7e6bd84760abdae99f4a4697879b4}{}\index{main.\+cpp@{main.\+cpp}!main@{main}}
+\index{main@{main}!main.\+cpp@{main.\+cpp}}
+\subsubsection[{main(int arg\+C, char $\ast$argv[])}]{\setlength{\rightskip}{0pt plus 5cm}int main (
+\begin{DoxyParamCaption}
+\item[{int}]{arg\+C, }
+\item[{char $\ast$}]{argv\mbox{[}$\,$\mbox{]}}
+\end{DoxyParamCaption}
+)}\label{main_8cpp_a67f7e6bd84760abdae99f4a4697879b4}
+Main routine that utilizes Xercesc module to create a D\+O\+M object in memory and prints out the resultant D\+O\+M structure 
+\begin{DoxyParams}{Parameters}
+{\em arg\+C} & number of command line args \\
+\hline
+{\em arg\+V} & name of command line args \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 if no errors occurred 
+\end{DoxyReturn}

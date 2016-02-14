@@ -1,0 +1,76 @@
+<!--lHFDKAHFKAFAKFGAKJFGAKFA-->
+<!-- afafafafafa
+    afafafafafafa -->
+<?xml version="1.0" encoding="UTF-8000345"?>
+<song-library>
+    <metadata xmlns="http://musicbrainz.org/ns/mmd-2.0#">
+        <recording id="1e4bae2c-bb75-4f23-9da9-d2b83882f08e">
+            <title>Star67</title>
+            <length>294000</length>
+            <artist-credit>
+                <name-credit>
+                    <artist id="9fff2f8a-21e6-47de-a2b8-7f449929d43f">
+                    <name>Drake</name>
+                    <sort-name>Drake</sort-name>
+                    <disambiguation>Canadian actor/rapper</disambiguation>
+                    </artist>
+                </name-credit>
+            </artist-credit>
+            <release-list count="2">
+                <release id="88c00a95-159a-47e8-84e9-38fa22c6a868">
+                    <title>If You're Reading This It's Too Late</title>
+                    <quality>normal</quality>
+                    <artist-credit>
+                        <name-credit>
+                        <artist id="9fff2f8a-21e6-47de-a2b8-7f449929d43f">
+                        <name>Drake</name>
+                        <sort-name>Drake</sort-name>
+                        <disambiguation>Canadian actor/rapper</disambiguation>
+                        </artist>
+                        </name-credit>
+                    </artist-credit>
+                    <date>2015-04-21</date>
+                    <country>US</country>
+                    <release-event-list count="1">
+                        <release-event>
+                            <date>2015-04-21</date>
+                            <area id="489ce91b-6658-3307-9877-795b68554c98">
+                                <name>United States</name>
+                                <sort-name>United States</sort-name>
+                                <iso-3166-1-code-list>
+                                <iso-3166-1-code>US</iso-3166-1-code>
+                                </iso-3166-1-code-list>
+                            </area>
+                        </release-event>
+                    </release-event-list>
+                    <barcode>602547288790</barcode>
+                </release>
+                <release id="c13201f0-32c6-4f39-91b9-616a2ac2e13f">
+                    <title>Drake vs. Meek Mill: Face Off</title>
+                    <status>Official</status>
+                    <quality>normal</quality>
+                    <packaging>None</packaging>
+                    <text-representation>
+                        <language>eng</language>
+                        <script>Latn</script>
+                    </text-representation>
+                    <artist-credit>
+                        <name-credit>
+                            <artist id="89ad4ac3-39f7-470e-963a-56509c546377">
+                            <name>Various Artists</name>
+                            <sort-name>Various Artists</sort-name>
+                            <disambiguation>add compilations to this artist</disambiguation>
+                            </artist>
+                        </name-credit>
+                    </artist-credit>
+                    <date>2015-08-07</date>
+                    <release-event-list count="1">
+                        <release-event>
+                        <date>2015-08-07</date>
+                        </release-event>
+                    </release-event-list>
+                </release>
+            </release-list>
+        </recording>
+    </metadata>
+</song-library>

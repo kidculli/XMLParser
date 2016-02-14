@@ -1,0 +1,732 @@
+<?xml version='1.0' encoding='UTF-8' ?> 
+<!--lHFDKAHFKAFAKFGAKJFGAKFA-->
+<!-- afafafafafa
+afafafafafafa -->
+<metadata xmlns="http://musicbrainz.org/ns/mmd-2.0#">
+    <recording id="2d584d3c-d6ce-40ec-b23a-7b29c687ac07">
+        <title>King Kunta</title>
+        <length>234693</length>
+        <artist-credit>
+            <name-credit>
+                <artist id="381086ea-f511-4aba-bdf9-71c753dc5077">
+                    <name>Kendrick Lamar</name>
+                    <sort-name>Lamar, Kendrick</sort-name>
+                    <alias-list count="3">
+                        <alias type="Search hint" sort-name="K. Dot">K. Dot</alias>
+                        <alias type="Search hint" sort-name="Kendrick Duckworth">Kendrick Duckworth</alias>
+                        <alias type="Legal name" sort-name="Duckworth, Kendrick Lamar">Kendrick Lamar Duckworth</alias>
+                    </alias-list>
+                </artist>
+            </name-credit>
+        </artist-credit>
+        <release-list count="3">
+            <release id="88ab7a5c-fd27-421e-85f0-f107ed86a43f">
+                <title>To Pimp a Butterfly</title>
+                <status>Official</status>
+                <quality>normal</quality>
+                <packaging>Jewel Case</packaging>
+                <text-representation>
+                    <language>eng</language>
+                    <script>Latn</script>
+                </text-representation>
+                <artist-credit>
+                    <name-credit>
+                        <artist id="381086ea-f511-4aba-bdf9-71c753dc5077">
+                            <name>Kendrick Lamar</name>
+                            <sort-name>Lamar, Kendrick</sort-name>
+                            <alias-list count="3">
+                                <alias type="Search hint" sort-name="K. Dot">K. Dot</alias>
+                                <alias sort-name="Kendrick Duckworth" type="Search hint">Kendrick Duckworth</alias>
+                                <alias type="Legal name" sort-name="Duckworth, Kendrick Lamar">Kendrick Lamar Duckworth</alias>
+                            </alias-list>
+                        </artist>
+                    </name-credit>
+                </artist-credit>
+                <date>2015-03-16</date>
+                <country>US</country>
+                <release-event-list count="1">
+                    <release-event>
+                        <date>2015-03-16</date>
+                        <area id="489ce91b-6658-3307-9877-795b68554c98">
+                            <name>United States</name>
+                            <sort-name>United States</sort-name>
+                            <iso-3166-1-code-list>
+                                <iso-3166-1-code>US</iso-3166-1-code>
+                            </iso-3166-1-code-list>
+                        </area>
+                    </release-event>
+                </release-event-list>
+                <barcode>602547270917</barcode>
+            </release>
+            <release id="b4d6e526-4195-49bc-b660-b6df4c27686e">
+                <title>To Pimp a Butterfly</title>
+                <status>Official</status>
+                <quality>normal</quality>
+                <packaging>None</packaging>
+                <text-representation>
+                    <language>eng</language>
+                    <script>Latn</script>
+                </text-representation>
+                <artist-credit>
+                    <name-credit>
+                        <artist id="381086ea-f511-4aba-bdf9-71c753dc5077">
+                            <name>Kendrick Lamar</name>
+                            <sort-name>Lamar, Kendrick</sort-name>
+                            <alias-list count="3">
+                                <alias type="Search hint" sort-name="K. Dot">K. Dot</alias>
+                                <alias type="Search hint" sort-name="Kendrick Duckworth">Kendrick Duckworth</alias>
+                                <alias type="Legal name" sort-name="Duckworth, Kendrick Lamar">Kendrick Lamar Duckworth</alias>
+                            </alias-list>
+                        </artist>
+                    </name-credit>
+                </artist-credit>
+                <date>2015-03-23</date>
+                <country>US</country>
+                <release-event-list count="1">
+                    <release-event>
+                        <date>2015-03-23</date>
+                        <area id="489ce91b-6658-3307-9877-795b68554c98">
+                            <name>United States</name>
+                            <sort-name>United States</sort-name>
+                            <iso-3166-1-code-list>
+                                <iso-3166-1-code>US</iso-3166-1-code>
+                            </iso-3166-1-code-list>
+                        </area>
+                    </release-event>
+                </release-event-list>
+            </release>
+            <release id="d86cb2dd-39f5-4e51-a886-c165a63df493">
+                <title>To Pimp a Butterfly</title>
+                <status>Official</status>
+                <quality>normal</quality>
+                <packaging>Jewel Case</packaging>
+                <text-representation>
+                    <language>eng</language>
+                    <script>Latn</script>
+                </text-representation>
+                <artist-credit>
+                    <name-credit>
+                        <artist id="381086ea-f511-4aba-bdf9-71c753dc5077">
+                            <name>Kendrick Lamar</name>
+                            <sort-name>Lamar, Kendrick</sort-name>
+                            <alias-list count="3">
+                                <alias type="Search hint" sort-name="K. Dot">K. Dot</alias>
+                                <alias type="Search hint" sort-name="Kendrick Duckworth">Kendrick Duckworth</alias>
+                                <alias type="Legal name" sort-name="Duckworth, Kendrick Lamar">Kendrick Lamar Duckworth</alias>
+                            </alias-list>
+                        </artist>
+                    </name-credit>
+                </artist-credit>
+                <date>2015-03-20</date>
+                <country>AU</country>
+                <release-event-list count="1">
+                    <release-event>
+                        <date>2015-03-20</date>
+                        <area id="106e0bec-b638-3b37-b731-f53d507dc00e">
+                            <name>Australia</name>
+                            <sort-name>Australia</sort-name>
+                            <iso-3166-1-code-list>
+                                <iso-3166-1-code>AU</iso-3166-1-code>
+                            </iso-3166-1-code-list>
+                        </area>
+                    </release-event>
+                </release-event-list>
+                <barcode>602547270917</barcode>
+            </release>
+        </release-list>
+    </recording>
+    <recording id="b5e1e12f-8832-4ba4-b772-de15e2db2009">
+        <title>Alright</title>
+        <length>219333</length>
+        <artist-credit>
+            <name-credit>
+                <artist id="381086ea-f511-4aba-bdf9-71c753dc5077">
+                    <name>Kendrick Lamar</name>
+                    <sort-name>Lamar, Kendrick</sort-name>
+                    <alias-list count="3">
+                        <alias sort-name="K. Dot" type="Search hint">K. Dot</alias>
+                        <alias type="Search hint" sort-name="Kendrick Duckworth">Kendrick Duckworth</alias>
+                        <alias sort-name="Duckworth, Kendrick Lamar" type="Legal name">Kendrick Lamar Duckworth</alias>
+                    </alias-list>
+                </artist>
+            </name-credit>
+        </artist-credit>
+        <release-list count="3">
+            <release id="88ab7a5c-fd27-421e-85f0-f107ed86a43f">
+                <title>To Pimp a Butterfly</title>
+                <status>Official</status>
+                <quality>normal</quality>
+                <packaging>Jewel Case</packaging>
+                <text-representation>
+                    <language>eng</language>
+                    <script>Latn</script>
+                </text-representation>
+                <artist-credit>
+                    <name-credit>
+                        <artist id="381086ea-f511-4aba-bdf9-71c753dc5077">
+                            <name>Kendrick Lamar</name>
+                            <sort-name>Lamar, Kendrick</sort-name>
+                            <alias-list count="3">
+                                <alias type="Search hint" sort-name="K. Dot">K. Dot</alias>
+                                <alias sort-name="Kendrick Duckworth" type="Search hint">Kendrick Duckworth</alias>
+                                <alias sort-name="Duckworth, Kendrick Lamar" type="Legal name">Kendrick Lamar Duckworth</alias>
+                            </alias-list>
+                        </artist>
+                    </name-credit>
+                </artist-credit>
+                <date>2015-03-16</date>
+                <country>US</country>
+                <release-event-list count="1">
+                    <release-event>
+                        <date>2015-03-16</date>
+                        <area id="489ce91b-6658-3307-9877-795b68554c98">
+                            <name>United States</name>
+                            <sort-name>United States</sort-name>
+                            <iso-3166-1-code-list>
+                                <iso-3166-1-code>US</iso-3166-1-code>
+                            </iso-3166-1-code-list>
+                        </area>
+                    </release-event>
+                </release-event-list>
+                <barcode>602547270917</barcode>
+            </release>
+            <release id="b4d6e526-4195-49bc-b660-b6df4c27686e">
+                <title>To Pimp a Butterfly</title>
+                <status>Official</status>
+                <quality>normal</quality>
+                <packaging>None</packaging>
+                <text-representation>
+                    <language>eng</language>
+                    <script>Latn</script>
+                </text-representation>
+                <artist-credit>
+                    <name-credit>
+                        <artist id="381086ea-f511-4aba-bdf9-71c753dc5077">
+                            <name>Kendrick Lamar</name>
+                            <sort-name>Lamar, Kendrick</sort-name>
+                            <alias-list count="3">
+                                <alias sort-name="K. Dot" type="Search hint">K. Dot</alias>
+                                <alias type="Search hint" sort-name="Kendrick Duckworth">Kendrick Duckworth</alias>
+                                <alias sort-name="Duckworth, Kendrick Lamar" type="Legal name">Kendrick Lamar Duckworth</alias>
+                            </alias-list>
+                        </artist>
+                    </name-credit>
+                </artist-credit>
+                <date>2015-03-23</date>
+                <country>US</country>
+                <release-event-list count="1">
+                    <release-event>
+                        <date>2015-03-23</date>
+                        <area id="489ce91b-6658-3307-9877-795b68554c98">
+                            <name>United States</name>
+                            <sort-name>United States</sort-name>
+                            <iso-3166-1-code-list>
+                                <iso-3166-1-code>US</iso-3166-1-code>
+                            </iso-3166-1-code-list>
+                        </area>
+                    </release-event>
+                </release-event-list>
+            </release>
+            <release id="d86cb2dd-39f5-4e51-a886-c165a63df493">
+                <title>To Pimp a Butterfly</title>
+                <status>Official</status>
+                <quality>normal</quality>
+                <packaging>Jewel Case</packaging>
+                <text-representation>
+                    <language>eng</language>
+                    <script>Latn</script>
+                </text-representation>
+                <artist-credit>
+                    <name-credit>
+                        <artist id="381086ea-f511-4aba-bdf9-71c753dc5077">
+                            <name>Kendrick Lamar</name>
+                            <sort-name>Lamar, Kendrick</sort-name>
+                            <alias-list count="3">
+                                <alias sort-name="K. Dot" type="Search hint">K. Dot</alias>
+                                <alias type="Search hint" sort-name="Kendrick Duckworth">Kendrick Duckworth</alias>
+                                <alias type="Legal name" sort-name="Duckworth, Kendrick Lamar">Kendrick Lamar Duckworth</alias>
+                            </alias-list>
+                        </artist>
+                    </name-credit>
+                </artist-credit>
+                <date>2015-03-20</date>
+                <country>AU</country>
+                <release-event-list count="1">
+                    <release-event>
+                        <date>2015-03-20</date>
+                        <area id="106e0bec-b638-3b37-b731-f53d507dc00e">
+                            <name>Australia</name>
+                            <sort-name>Australia</sort-name>
+                            <iso-3166-1-code-list>
+                                <iso-3166-1-code>AU</iso-3166-1-code>
+                            </iso-3166-1-code-list>
+                        </area>
+                    </release-event>
+                </release-event-list>
+                <barcode>602547270917</barcode>
+            </release>
+        </release-list>
+    </recording>
+    <recording id="54494123-9670-4b2d-83ad-85c46c8f5200">
+        <title>Bitch, Don’t Kill My Vibe</title>
+        <length>310000</length>
+        <artist-credit>
+            <name-credit>
+                <artist id="381086ea-f511-4aba-bdf9-71c753dc5077">
+                    <name>Kendrick Lamar</name>
+                    <sort-name>Lamar, Kendrick</sort-name>
+                    <alias-list count="3">
+                        <alias type="Search hint" sort-name="K. Dot">K. Dot</alias>
+                        <alias sort-name="Kendrick Duckworth" type="Search hint">Kendrick Duckworth</alias>
+                        <alias sort-name="Duckworth, Kendrick Lamar" type="Legal name">Kendrick Lamar Duckworth</alias>
+                    </alias-list>
+                </artist>
+            </name-credit>
+        </artist-credit>
+        <release-list count="10">
+            <release id="0726c5f4-da29-4a78-a8ab-b08e632fe3b9">
+                <title>good kid, m.A.A.d city</title>
+                <status>Official</status>
+                <quality>normal</quality>
+                <disambiguation>iTunes Deluxe Edition</disambiguation>
+                <packaging>None</packaging>
+                <text-representation>
+                    <language>eng</language>
+                    <script>Latn</script>
+                </text-representation>
+                <artist-credit>
+                    <name-credit>
+                        <artist id="381086ea-f511-4aba-bdf9-71c753dc5077">
+                            <name>Kendrick Lamar</name>
+                            <sort-name>Lamar, Kendrick</sort-name>
+                            <alias-list count="3">
+                                <alias type="Search hint" sort-name="K. Dot">K. Dot</alias>
+                                <alias type="Search hint" sort-name="Kendrick Duckworth">Kendrick Duckworth</alias>
+                                <alias sort-name="Duckworth, Kendrick Lamar" type="Legal name">Kendrick Lamar Duckworth</alias>
+                            </alias-list>
+                        </artist>
+                    </name-credit>
+                </artist-credit>
+                <date>2012-10-22</date>
+                <country>US</country>
+                <release-event-list count="1">
+                    <release-event>
+                        <date>2012-10-22</date>
+                        <area id="489ce91b-6658-3307-9877-795b68554c98">
+                            <name>United States</name>
+                            <sort-name>United States</sort-name>
+                            <iso-3166-1-code-list>
+                                <iso-3166-1-code>US</iso-3166-1-code>
+                            </iso-3166-1-code-list>
+                        </area>
+                    </release-event>
+                </release-event-list>
+                <barcode/>
+            </release>
+            <release id="09bef99c-27d7-48b9-8c41-187f0f499743">
+                <title>good kid, m.A.A.d city</title>
+                <status>Official</status>
+                <quality>normal</quality>
+                <disambiguation>2013 reissue</disambiguation>
+                <packaging>Jewel Case</packaging>
+                <text-representation>
+                    <language>eng</language>
+                    <script>Latn</script>
+                </text-representation>
+                <artist-credit>
+                    <name-credit>
+                        <artist id="381086ea-f511-4aba-bdf9-71c753dc5077">
+                            <name>Kendrick Lamar</name>
+                            <sort-name>Lamar, Kendrick</sort-name>
+                            <alias-list count="3">
+                                <alias sort-name="K. Dot" type="Search hint">K. Dot</alias>
+                                <alias type="Search hint" sort-name="Kendrick Duckworth">Kendrick Duckworth</alias>
+                                <alias type="Legal name" sort-name="Duckworth, Kendrick Lamar">Kendrick Lamar Duckworth</alias>
+                            </alias-list>
+                        </artist>
+                    </name-credit>
+                </artist-credit>
+                <date>2013-04-23</date>
+                <country>US</country>
+                <release-event-list count="1">
+                    <release-event>
+                        <date>2013-04-23</date>
+                        <area id="489ce91b-6658-3307-9877-795b68554c98">
+                            <name>United States</name>
+                            <sort-name>United States</sort-name>
+                            <iso-3166-1-code-list>
+                                <iso-3166-1-code>US</iso-3166-1-code>
+                            </iso-3166-1-code-list>
+                        </area>
+                    </release-event>
+                </release-event-list>
+                <barcode>602537362691</barcode>
+            </release>
+            <release id="2bed28b0-71db-4519-950f-2aef314fa6d4">
+                <title>good kid, m.A.A.d city</title>
+                <status>Official</status>
+                <quality>normal</quality>
+                <text-representation>
+                    <language>eng</language>
+                    <script>Latn</script>
+                </text-representation>
+                <artist-credit>
+                    <name-credit>
+                        <artist id="381086ea-f511-4aba-bdf9-71c753dc5077">
+                            <name>Kendrick Lamar</name>
+                            <sort-name>Lamar, Kendrick</sort-name>
+                            <alias-list count="3">
+                                <alias sort-name="K. Dot" type="Search hint">K. Dot</alias>
+                                <alias type="Search hint" sort-name="Kendrick Duckworth">Kendrick Duckworth</alias>
+                                <alias sort-name="Duckworth, Kendrick Lamar" type="Legal name">Kendrick Lamar Duckworth</alias>
+                            </alias-list>
+                        </artist>
+                    </name-credit>
+                </artist-credit>
+                <date>2013-04-02</date>
+                <release-event-list count="1">
+                    <release-event>
+                        <date>2013-04-02</date>
+                    </release-event>
+                </release-event-list>
+            </release>
+            <release id="48415b02-026d-49e8-8daf-e0c6c0e6836f">
+                <title>good kid, m.A.A.d city</title>
+                <status>Official</status>
+                <quality>normal</quality>
+                <packaging>Jewel Case</packaging>
+                <text-representation>
+                    <language>eng</language>
+                    <script>Latn</script>
+                </text-representation>
+                <artist-credit>
+                    <name-credit>
+                        <artist id="381086ea-f511-4aba-bdf9-71c753dc5077">
+                            <name>Kendrick Lamar</name>
+                            <sort-name>Lamar, Kendrick</sort-name>
+                            <alias-list count="3">
+                                <alias type="Search hint" sort-name="K. Dot">K. Dot</alias>
+                                <alias type="Search hint" sort-name="Kendrick Duckworth">Kendrick Duckworth</alias>
+                                <alias type="Legal name" sort-name="Duckworth, Kendrick Lamar">Kendrick Lamar Duckworth</alias>
+                            </alias-list>
+                        </artist>
+                    </name-credit>
+                </artist-credit>
+                <date>2013-07-19</date>
+                <country>DE</country>
+                <release-event-list count="1">
+                    <release-event>
+                        <date>2013-07-19</date>
+                        <area id="85752fda-13c4-31a3-bee5-0e5cb1f51dad">
+                            <name>Germany</name>
+                            <sort-name>Germany</sort-name>
+                            <iso-3166-1-code-list>
+                                <iso-3166-1-code>DE</iso-3166-1-code>
+                            </iso-3166-1-code-list>
+                        </area>
+                    </release-event>
+                </release-event-list>
+                <barcode>602537439430</barcode>
+            </release>
+            <release id="58873e97-80b4-4055-9540-e2836584d1f2">
+                <title>good Kid, m.A.A.d city</title>
+                <status>Official</status>
+                <quality>normal</quality>
+                <disambiguation>deluxe</disambiguation>
+                <packaging>None</packaging>
+                <text-representation>
+                    <language>eng</language>
+                    <script>Latn</script>
+                </text-representation>
+                <artist-credit>
+                    <name-credit>
+                        <artist id="381086ea-f511-4aba-bdf9-71c753dc5077">
+                            <name>Kendrick Lamar</name>
+                            <sort-name>Lamar, Kendrick</sort-name>
+                            <alias-list count="3">
+                                <alias type="Search hint" sort-name="K. Dot">K. Dot</alias>
+                                <alias sort-name="Kendrick Duckworth" type="Search hint">Kendrick Duckworth</alias>
+                                <alias sort-name="Duckworth, Kendrick Lamar" type="Legal name">Kendrick Lamar Duckworth</alias>
+                            </alias-list>
+                        </artist>
+                    </name-credit>
+                </artist-credit>
+                <date>2013-06-19</date>
+                <country>DE</country>
+                <release-event-list count="1">
+                    <release-event>
+                        <date>2013-06-19</date>
+                        <area id="85752fda-13c4-31a3-bee5-0e5cb1f51dad">
+                            <name>Germany</name>
+                            <sort-name>Germany</sort-name>
+                            <iso-3166-1-code-list>
+                                <iso-3166-1-code>DE</iso-3166-1-code>
+                            </iso-3166-1-code-list>
+                        </area>
+                    </release-event>
+                </release-event-list>
+            </release>
+            <release id="5d850f71-e51e-44be-96c8-51cc305f3596">
+                <title>good kid, m.A.A.d city</title>
+                <status>Official</status>
+                <quality>normal</quality>
+                <packaging>Jewel Case</packaging>
+                <text-representation>
+                    <language>eng</language>
+                    <script>Latn</script>
+                </text-representation>
+                <artist-credit>
+                    <name-credit>
+                        <artist id="381086ea-f511-4aba-bdf9-71c753dc5077">
+                            <name>Kendrick Lamar</name>
+                            <sort-name>Lamar, Kendrick</sort-name>
+                            <alias-list count="3">
+                                <alias sort-name="K. Dot" type="Search hint">K. Dot</alias>
+                                <alias type="Search hint" sort-name="Kendrick Duckworth">Kendrick Duckworth</alias>
+                                <alias type="Legal name" sort-name="Duckworth, Kendrick Lamar">Kendrick Lamar Duckworth</alias>
+                            </alias-list>
+                        </artist>
+                    </name-credit>
+                </artist-credit>
+                <date>2012-10-22</date>
+                <country>US</country>
+                <release-event-list count="1">
+                    <release-event>
+                        <date>2012-10-22</date>
+                        <area id="489ce91b-6658-3307-9877-795b68554c98">
+                            <name>United States</name>
+                            <sort-name>United States</sort-name>
+                            <iso-3166-1-code-list>
+                                <iso-3166-1-code>US</iso-3166-1-code>
+                            </iso-3166-1-code-list>
+                        </area>
+                    </release-event>
+                </release-event-list>
+                <barcode>602537156535</barcode>
+            </release>
+            <release id="9fc676d7-9a01-4653-83fd-4ea43b8a84d9">
+                <title>good kid, m.A.A.d city</title>
+                <status>Official</status>
+                <quality>normal</quality>
+                <text-representation>
+                    <language>eng</language>
+                    <script>Latn</script>
+                </text-representation>
+                <artist-credit>
+                    <name-credit>
+                        <artist id="381086ea-f511-4aba-bdf9-71c753dc5077">
+                            <name>Kendrick Lamar</name>
+                            <sort-name>Lamar, Kendrick</sort-name>
+                            <alias-list count="3">
+                                <alias sort-name="K. Dot" type="Search hint">K. Dot</alias>
+                                <alias type="Search hint" sort-name="Kendrick Duckworth">Kendrick Duckworth</alias>
+                                <alias type="Legal name" sort-name="Duckworth, Kendrick Lamar">Kendrick Lamar Duckworth</alias>
+                            </alias-list>
+                        </artist>
+                    </name-credit>
+                </artist-credit>
+                <date>2013</date>
+                <country>CA</country>
+                <release-event-list count="1">
+                    <release-event>
+                        <date>2013</date>
+                        <area id="71bbafaa-e825-3e15-8ca9-017dcad1748b">
+                            <name>Canada</name>
+                            <sort-name>Canada</sort-name>
+                            <iso-3166-1-code-list>
+                                <iso-3166-1-code>CA</iso-3166-1-code>
+                            </iso-3166-1-code-list>
+                        </area>
+                    </release-event>
+                </release-event-list>
+                <barcode>602537362691</barcode>
+            </release>
+            <release id="bb772ff7-7ed8-435b-9bfe-90df819fa605">
+                <title>good kid, m.A.A.d city</title>
+                <status>Official</status>
+                <quality>normal</quality>
+                <text-representation>
+                    <language>eng</language>
+                    <script>Latn</script>
+                </text-representation>
+                <artist-credit>
+                    <name-credit>
+                        <artist id="381086ea-f511-4aba-bdf9-71c753dc5077">
+                            <name>Kendrick Lamar</name>
+                            <sort-name>Lamar, Kendrick</sort-name>
+                            <alias-list count="3">
+                                <alias sort-name="K. Dot" type="Search hint">K. Dot</alias>
+                                <alias type="Search hint" sort-name="Kendrick Duckworth">Kendrick Duckworth</alias>
+                                <alias type="Legal name" sort-name="Duckworth, Kendrick Lamar">Kendrick Lamar Duckworth</alias>
+                            </alias-list>
+                        </artist>
+                    </name-credit>
+                </artist-credit>
+                <date>2012-10-23</date>
+                <country>GB</country>
+                <release-event-list count="1">
+                    <release-event>
+                        <date>2012-10-23</date>
+                        <area id="8a754a16-0027-3a29-b6d7-2b40ea0481ed">
+                            <name>United Kingdom</name>
+                            <sort-name>United Kingdom</sort-name>
+                            <iso-3166-1-code-list>
+                                <iso-3166-1-code>GB</iso-3166-1-code>
+                            </iso-3166-1-code-list>
+                        </area>
+                    </release-event>
+                </release-event-list>
+                <barcode>0602537156535</barcode>
+            </release>
+            <release id="cdf94048-849f-4beb-a5b1-fdb2c503ca67">
+                <title>good kid, m.A.A.d city</title>
+                <status>Official</status>
+                <quality>normal</quality>
+                <disambiguation>Target deluxe edition</disambiguation>
+                <text-representation>
+                    <language>eng</language>
+                    <script>Latn</script>
+                </text-representation>
+                <artist-credit>
+                    <name-credit>
+                        <artist id="381086ea-f511-4aba-bdf9-71c753dc5077">
+                            <name>Kendrick Lamar</name>
+                            <sort-name>Lamar, Kendrick</sort-name>
+                            <alias-list count="3">
+                                <alias type="Search hint" sort-name="K. Dot">K. Dot</alias>
+                                <alias type="Search hint" sort-name="Kendrick Duckworth">Kendrick Duckworth</alias>
+                                <alias type="Legal name" sort-name="Duckworth, Kendrick Lamar">Kendrick Lamar Duckworth</alias>
+                            </alias-list>
+                        </artist>
+                    </name-credit>
+                </artist-credit>
+                <date>2012-10-22</date>
+                <country>US</country>
+                <release-event-list count="1">
+                    <release-event>
+                        <date>2012-10-22</date>
+                        <area id="489ce91b-6658-3307-9877-795b68554c98">
+                            <name>United States</name>
+                            <sort-name>United States</sort-name>
+                            <iso-3166-1-code-list>
+                                <iso-3166-1-code>US</iso-3166-1-code>
+                            </iso-3166-1-code-list>
+                        </area>
+                    </release-event>
+                </release-event-list>
+            </release>
+            <release id="e1d99364-1ad9-4f4d-9505-2242eff10a44">
+                <title>good kid, m.A.A.d city</title>
+                <status>Official</status>
+                <quality>normal</quality>
+                <disambiguation>deluxe edition</disambiguation>
+                <packaging>Jewel Case</packaging>
+                <text-representation>
+                    <language>eng</language>
+                    <script>Latn</script>
+                </text-representation>
+                <artist-credit>
+                    <name-credit>
+                        <artist id="381086ea-f511-4aba-bdf9-71c753dc5077">
+                            <name>Kendrick Lamar</name>
+                            <sort-name>Lamar, Kendrick</sort-name>
+                            <alias-list count="3">
+                                <alias type="Search hint" sort-name="K. Dot">K. Dot</alias>
+                                <alias type="Search hint" sort-name="Kendrick Duckworth">Kendrick Duckworth</alias>
+                                <alias sort-name="Duckworth, Kendrick Lamar" type="Legal name">Kendrick Lamar Duckworth</alias>
+                            </alias-list>
+                        </artist>
+                    </name-credit>
+                </artist-credit>
+                <date>2012-10-22</date>
+                <country>US</country>
+                <release-event-list count="1">
+                    <release-event>
+                        <date>2012-10-22</date>
+                        <area id="489ce91b-6658-3307-9877-795b68554c98">
+                            <name>United States</name>
+                            <sort-name>United States</sort-name>
+                            <iso-3166-1-code-list>
+                                <iso-3166-1-code>US</iso-3166-1-code>
+                            </iso-3166-1-code-list>
+                        </area>
+                    </release-event>
+                </release-event-list>
+                <barcode>602537162321</barcode>
+            </release>
+        </release-list>
+    </recording>
+
+    <recording id="1e4bae2c-bb75-4f23-9da9-d2b83882f08e">
+        <title>Star67</title>
+        <length>294000</length>
+        <artist-credit>
+            <name-credit>
+                <artist id="9fff2f8a-21e6-47de-a2b8-7f449929d43f">
+                    <name>Drake</name>
+                    <sort-name>Drake</sort-name>
+                    <disambiguation>Canadian actor/rapper</disambiguation>
+                </artist>
+            </name-credit>
+        </artist-credit>
+        <release-list count="2">
+            <release id="88c00a95-159a-47e8-84e9-38fa22c6a868">
+                <title>If You're Reading This It's Too Late</title>
+                <quality>normal</quality>
+                <artist-credit>
+                    <name-credit>
+                        <artist id="9fff2f8a-21e6-47de-a2b8-7f449929d43f">
+                            <name>Drake</name>
+                            <sort-name>Drake</sort-name>
+                            <disambiguation>Canadian actor/rapper</disambiguation>
+                        </artist>
+                    </name-credit>
+                </artist-credit>
+                <date>2015-04-21</date>
+                <country>US</country>
+                <release-event-list count="1">
+                    <release-event>
+                        <date>2015-04-21</date>
+                        <area id="489ce91b-6658-3307-9877-795b68554c98">
+                            <name>United States</name>
+                            <sort-name>United States</sort-name>
+                            <iso-3166-1-code-list>
+                                <iso-3166-1-code>US</iso-3166-1-code>
+                            </iso-3166-1-code-list>
+                        </area>
+                    </release-event>
+                </release-event-list>
+                <barcode>602547288790</barcode>
+            </release>
+            <release id="c13201f0-32c6-4f39-91b9-616a2ac2e13f">
+                <title>Drake vs. Meek Mill: Face Off</title>
+                <status>Official</status>
+                <quality>normal</quality>
+                <packaging>None</packaging>
+                <text-representation>
+                    <language>eng</language>
+                    <script>Latn</script>
+                </text-representation>
+                <artist-credit>
+                    <name-credit>
+                        <artist id="89ad4ac3-39f7-470e-963a-56509c546377">
+                            <name>Various Artists</name>
+                            <sort-name>Various Artists</sort-name>
+                            <disambiguation>add compilations to this artist</disambiguation>
+                        </artist>
+                    </name-credit>
+                </artist-credit>
+                <date>2015-08-07</date>
+                <release-event-list count="1">
+                    <release-event>
+                        <date>2015-08-07</date>
+                    </release-event>
+                </release-event-list>
+            </release>
+        </release-list>
+    </recording>
+    <swag>
+        <ocho> 8 </ocho>
+        <guap> $$$$ </guap>
+    </swag>
+</metadata>

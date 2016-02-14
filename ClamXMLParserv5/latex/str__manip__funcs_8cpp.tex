@@ -1,0 +1,90 @@
+\hypertarget{str__manip__funcs_8cpp}{}\section{str\+\_\+manip\+\_\+funcs.\+cpp File Reference}
+\label{str__manip__funcs_8cpp}\index{str\+\_\+manip\+\_\+funcs.\+cpp@{str\+\_\+manip\+\_\+funcs.\+cpp}}
+{\ttfamily \#include \char`\"{}str\+\_\+manip\+\_\+funcs.\+h\char`\"{}}\\*
+{\ttfamily \#include $<$sstream$>$}\\*
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+string \hyperlink{str__manip__funcs_8cpp_aa7cb820696f8a66d03330e091482020c}{trim} (string str)
+\item 
+vector$<$ string $>$ \& \hyperlink{str__manip__funcs_8cpp_a9006fe1efd7ed909359f4f09aebc9145}{split} (const string \&s, char delim, vector$<$ string $>$ \&elems)
+\item 
+vector$<$ string $>$ \hyperlink{str__manip__funcs_8cpp_add313f0fe82466f4c1c4622307d928bc}{split} (const string \&s, char delim)
+\item 
+string \hyperlink{str__manip__funcs_8cpp_a4f771417d182969df5ba8ac0a90635dd}{strip} (string \&str, char z)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{str__manip__funcs_8cpp_a9006fe1efd7ed909359f4f09aebc9145}{}\index{str\+\_\+manip\+\_\+funcs.\+cpp@{str\+\_\+manip\+\_\+funcs.\+cpp}!split@{split}}
+\index{split@{split}!str\+\_\+manip\+\_\+funcs.\+cpp@{str\+\_\+manip\+\_\+funcs.\+cpp}}
+\subsubsection[{split(const string \&s, char delim, vector$<$ string $>$ \&elems)}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$string$>$\& split (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{s, }
+\item[{char}]{delim, }
+\item[{vector$<$ string $>$ \&}]{elems}
+\end{DoxyParamCaption}
+)}\label{str__manip__funcs_8cpp_a9006fe1efd7ed909359f4f09aebc9145}
+Returns a vector of strings that have been split by a delimiter character helper function for overloaded version source \href{http://stackoverflow.com/questions/236129/split-a-string-in-c}{\tt http\+://stackoverflow.\+com/questions/236129/split-\/a-\/string-\/in-\/c} 
+\begin{DoxyParams}{Parameters}
+{\em s} & string to be split \\
+\hline
+{\em delim} & delimitting char \\
+\hline
+{\em elems} & vector to store split strings \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+vector of strings split by delimiter 
+\end{DoxyReturn}
+\hypertarget{str__manip__funcs_8cpp_add313f0fe82466f4c1c4622307d928bc}{}\index{str\+\_\+manip\+\_\+funcs.\+cpp@{str\+\_\+manip\+\_\+funcs.\+cpp}!split@{split}}
+\index{split@{split}!str\+\_\+manip\+\_\+funcs.\+cpp@{str\+\_\+manip\+\_\+funcs.\+cpp}}
+\subsubsection[{split(const string \&s, char delim)}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$string$>$ split (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{s, }
+\item[{char}]{delim}
+\end{DoxyParamCaption}
+)}\label{str__manip__funcs_8cpp_add313f0fe82466f4c1c4622307d928bc}
+Returns a vector of strings that have been split by a delimiter character helper function for overloaded version source \href{http://stackoverflow.com/questions/236129/split-a-string-in-c}{\tt http\+://stackoverflow.\+com/questions/236129/split-\/a-\/string-\/in-\/c} 
+\begin{DoxyParams}{Parameters}
+{\em s} & string to be split \\
+\hline
+{\em delim} & delimitting char \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+vector of strings split by delimiter 
+\end{DoxyReturn}
+\hypertarget{str__manip__funcs_8cpp_a4f771417d182969df5ba8ac0a90635dd}{}\index{str\+\_\+manip\+\_\+funcs.\+cpp@{str\+\_\+manip\+\_\+funcs.\+cpp}!strip@{strip}}
+\index{strip@{strip}!str\+\_\+manip\+\_\+funcs.\+cpp@{str\+\_\+manip\+\_\+funcs.\+cpp}}
+\subsubsection[{strip(string \&str, char z)}]{\setlength{\rightskip}{0pt plus 5cm}string strip (
+\begin{DoxyParamCaption}
+\item[{string \&}]{str, }
+\item[{char}]{z}
+\end{DoxyParamCaption}
+)}\label{str__manip__funcs_8cpp_a4f771417d182969df5ba8ac0a90635dd}
+Strips string of specified char 
+\begin{DoxyParams}{Parameters}
+{\em str} & string that will be stripped \\
+\hline
+{\em z} & char that will be removed from string \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+stripped string 
+\end{DoxyReturn}
+\hypertarget{str__manip__funcs_8cpp_aa7cb820696f8a66d03330e091482020c}{}\index{str\+\_\+manip\+\_\+funcs.\+cpp@{str\+\_\+manip\+\_\+funcs.\+cpp}!trim@{trim}}
+\index{trim@{trim}!str\+\_\+manip\+\_\+funcs.\+cpp@{str\+\_\+manip\+\_\+funcs.\+cpp}}
+\subsubsection[{trim(string str)}]{\setlength{\rightskip}{0pt plus 5cm}string trim (
+\begin{DoxyParamCaption}
+\item[{string}]{str}
+\end{DoxyParamCaption}
+)}\label{str__manip__funcs_8cpp_aa7cb820696f8a66d03330e091482020c}
+Trim leading and trailing white space (spaces and tabs) from the string passed as an argument and return the trimmed string. 
+\begin{DoxyParams}{Parameters}
+{\em str} & string to trim \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+trimmed string source\+: Jesse Heines 
+\end{DoxyReturn}
