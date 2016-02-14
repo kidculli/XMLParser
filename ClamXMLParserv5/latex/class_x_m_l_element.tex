@@ -1,0 +1,225 @@
+\hypertarget{class_x_m_l_element}{}\section{X\+M\+L\+Element Class Reference}
+\label{class_x_m_l_element}\index{X\+M\+L\+Element@{X\+M\+L\+Element}}
+
+
+{\ttfamily \#include $<$X\+M\+L\+Element.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_x_m_l_element_ae6e0c3440c60484c1fa97e06efdae280}{X\+M\+L\+Element} ()
+\item 
+\hyperlink{class_x_m_l_element_af9a5086b0eb8e32633d454169d2530ef}{X\+M\+L\+Element} (int line\+\_\+found, string X\+M\+L\+\_\+line)
+\item 
+int \hyperlink{class_x_m_l_element_ad7c45aa65275ff66bd3295bce8c409a1}{get\+\_\+line\+\_\+num} ()
+\item 
+string \hyperlink{class_x_m_l_element_afa2abd65f1413992f1a9523a088ebecf}{get\+\_\+element\+\_\+name} ()
+\item 
+void \hyperlink{class_x_m_l_element_a7d61b29503d9fcb1170aede0d1f8fc6f}{set\+\_\+line\+\_\+num} (int line)
+\item 
+void \hyperlink{class_x_m_l_element_afe078c3f6f8ac606add305b9196a8930}{set\+\_\+element\+\_\+name} (string tag)
+\item 
+void \hyperlink{class_x_m_l_element_a865f7f8976d3bbe0820dee4f52f9abfe}{set\+\_\+str\+\_\+content} (string content)
+\item 
+void \hyperlink{class_x_m_l_element_a95b917dfc225ddc5dc81444356d65868}{add\+\_\+child} (\hyperlink{class_x_m_l_element}{X\+M\+L\+Element} $\ast$child)
+\item 
+string \hyperlink{class_x_m_l_element_a34318d5eca211d29f1bb04f76d9386c6}{get\+\_\+str\+\_\+content} ()
+\item 
+vector$<$ \hyperlink{class_x_m_l_element}{X\+M\+L\+Element} $\ast$ $>$ \hyperlink{class_x_m_l_element_aeeb4a986c6e25126b0cc74c83ea39be7}{get\+\_\+children} ()
+\item 
+const map$<$ string, string $>$ \& \hyperlink{class_x_m_l_element_a88d57f7c16383a120e659c101daf147b}{get\+Attributes} () const 
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+map$<$ string, string $>$ \hyperlink{class_x_m_l_element_aa54b802214293181a7ed65bba1c585a5}{extract\+\_\+attr} (string line)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{class_x_m_l_element_a54da22f991a728bae20540dc00ee7778}{line\+\_\+num}
+\item 
+string \hyperlink{class_x_m_l_element_a722f30863988660ebb15ed33be03ac56}{element\+\_\+name}
+\item 
+string \hyperlink{class_x_m_l_element_a2d4e27f50c33a8faa5f825199e921475}{str\+\_\+content} = \char`\"{}\{E\+M\+P\+T\+Y\}\char`\"{}
+\item 
+vector$<$ \hyperlink{class_x_m_l_element}{X\+M\+L\+Element} $\ast$ $>$ \hyperlink{class_x_m_l_element_a3b22b2f718295200364d0f178a97eec4}{children}
+\item 
+map$<$ string, string $>$ \hyperlink{class_x_m_l_element_a75826668ddbc8d736c375e161b25eaee}{attributes}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_x_m_l_element_ae6e0c3440c60484c1fa97e06efdae280}{}\index{X\+M\+L\+Element@{X\+M\+L\+Element}!X\+M\+L\+Element@{X\+M\+L\+Element}}
+\index{X\+M\+L\+Element@{X\+M\+L\+Element}!X\+M\+L\+Element@{X\+M\+L\+Element}}
+\subsubsection[{X\+M\+L\+Element()}]{\setlength{\rightskip}{0pt plus 5cm}X\+M\+L\+Element\+::\+X\+M\+L\+Element (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_x_m_l_element_ae6e0c3440c60484c1fa97e06efdae280}
+default constructor \hypertarget{class_x_m_l_element_af9a5086b0eb8e32633d454169d2530ef}{}\index{X\+M\+L\+Element@{X\+M\+L\+Element}!X\+M\+L\+Element@{X\+M\+L\+Element}}
+\index{X\+M\+L\+Element@{X\+M\+L\+Element}!X\+M\+L\+Element@{X\+M\+L\+Element}}
+\subsubsection[{X\+M\+L\+Element(int line\+\_\+found, string X\+M\+L\+\_\+line)}]{\setlength{\rightskip}{0pt plus 5cm}X\+M\+L\+Element\+::\+X\+M\+L\+Element (
+\begin{DoxyParamCaption}
+\item[{int}]{line\+\_\+found, }
+\item[{string}]{X\+M\+L\+\_\+line}
+\end{DoxyParamCaption}
+)}\label{class_x_m_l_element_af9a5086b0eb8e32633d454169d2530ef}
+constructor with two arguments\+: line number and line of X\+M\+L. Will initialize properties\+: line\+\_\+num, element\+\_\+name, and attributes.
+
+
+\begin{DoxyParams}{Parameters}
+{\em line\+\_\+found} & line number where element is found \\
+\hline
+{\em X\+M\+L\+\_\+line} & line of text from X\+M\+L\+\_\+file \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{class_x_m_l_element}{X\+M\+L\+Element} object 
+\end{DoxyReturn}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_x_m_l_element_a95b917dfc225ddc5dc81444356d65868}{}\index{X\+M\+L\+Element@{X\+M\+L\+Element}!add\+\_\+child@{add\+\_\+child}}
+\index{add\+\_\+child@{add\+\_\+child}!X\+M\+L\+Element@{X\+M\+L\+Element}}
+\subsubsection[{add\+\_\+child(\+X\+M\+L\+Element $\ast$child)}]{\setlength{\rightskip}{0pt plus 5cm}void X\+M\+L\+Element\+::add\+\_\+child (
+\begin{DoxyParamCaption}
+\item[{{\bf X\+M\+L\+Element} $\ast$}]{child}
+\end{DoxyParamCaption}
+)}\label{class_x_m_l_element_a95b917dfc225ddc5dc81444356d65868}
+adds child element to children vector 
+\begin{DoxyParams}{Parameters}
+{\em child} & pointer to an \hyperlink{class_x_m_l_element}{X\+M\+L\+Element} object \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_x_m_l_element_aa54b802214293181a7ed65bba1c585a5}{}\index{X\+M\+L\+Element@{X\+M\+L\+Element}!extract\+\_\+attr@{extract\+\_\+attr}}
+\index{extract\+\_\+attr@{extract\+\_\+attr}!X\+M\+L\+Element@{X\+M\+L\+Element}}
+\subsubsection[{extract\+\_\+attr(string line)}]{\setlength{\rightskip}{0pt plus 5cm}map$<$ string, string $>$ X\+M\+L\+Element\+::extract\+\_\+attr (
+\begin{DoxyParamCaption}
+\item[{string}]{line}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{class_x_m_l_element_aa54b802214293181a7ed65bba1c585a5}
+Method that extracts attributes from an xml string. 
+\begin{DoxyParams}{Parameters}
+{\em line} & line of an xml file \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+returns an S\+T\+L Map$<$string,string$>$ class 
+\end{DoxyReturn}
+\hypertarget{class_x_m_l_element_aeeb4a986c6e25126b0cc74c83ea39be7}{}\index{X\+M\+L\+Element@{X\+M\+L\+Element}!get\+\_\+children@{get\+\_\+children}}
+\index{get\+\_\+children@{get\+\_\+children}!X\+M\+L\+Element@{X\+M\+L\+Element}}
+\subsubsection[{get\+\_\+children()}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$ {\bf X\+M\+L\+Element} $\ast$ $>$ X\+M\+L\+Element\+::get\+\_\+children (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_x_m_l_element_aeeb4a986c6e25126b0cc74c83ea39be7}
+return children of the element \begin{DoxyReturn}{Returns}
+vector of \hyperlink{class_x_m_l_element}{X\+M\+L\+Element} pointers 
+\end{DoxyReturn}
+\hypertarget{class_x_m_l_element_afa2abd65f1413992f1a9523a088ebecf}{}\index{X\+M\+L\+Element@{X\+M\+L\+Element}!get\+\_\+element\+\_\+name@{get\+\_\+element\+\_\+name}}
+\index{get\+\_\+element\+\_\+name@{get\+\_\+element\+\_\+name}!X\+M\+L\+Element@{X\+M\+L\+Element}}
+\subsubsection[{get\+\_\+element\+\_\+name()}]{\setlength{\rightskip}{0pt plus 5cm}string X\+M\+L\+Element\+::get\+\_\+element\+\_\+name (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_x_m_l_element_afa2abd65f1413992f1a9523a088ebecf}
+getter function for element\+\_\+name \begin{DoxyReturn}{Returns}
+name of the X\+M\+L element 
+\end{DoxyReturn}
+\hypertarget{class_x_m_l_element_ad7c45aa65275ff66bd3295bce8c409a1}{}\index{X\+M\+L\+Element@{X\+M\+L\+Element}!get\+\_\+line\+\_\+num@{get\+\_\+line\+\_\+num}}
+\index{get\+\_\+line\+\_\+num@{get\+\_\+line\+\_\+num}!X\+M\+L\+Element@{X\+M\+L\+Element}}
+\subsubsection[{get\+\_\+line\+\_\+num()}]{\setlength{\rightskip}{0pt plus 5cm}int X\+M\+L\+Element\+::get\+\_\+line\+\_\+num (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_x_m_l_element_ad7c45aa65275ff66bd3295bce8c409a1}
+getter function for line\+\_\+num \begin{DoxyReturn}{Returns}
+line\+\_\+number where \hyperlink{class_x_m_l_element}{X\+M\+L\+Element} was found 
+\end{DoxyReturn}
+\hypertarget{class_x_m_l_element_a34318d5eca211d29f1bb04f76d9386c6}{}\index{X\+M\+L\+Element@{X\+M\+L\+Element}!get\+\_\+str\+\_\+content@{get\+\_\+str\+\_\+content}}
+\index{get\+\_\+str\+\_\+content@{get\+\_\+str\+\_\+content}!X\+M\+L\+Element@{X\+M\+L\+Element}}
+\subsubsection[{get\+\_\+str\+\_\+content()}]{\setlength{\rightskip}{0pt plus 5cm}string X\+M\+L\+Element\+::get\+\_\+str\+\_\+content (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_x_m_l_element_a34318d5eca211d29f1bb04f76d9386c6}
+returns str\+\_\+content \begin{DoxyReturn}{Returns}
+content of X\+M\+L element 
+\end{DoxyReturn}
+\hypertarget{class_x_m_l_element_a88d57f7c16383a120e659c101daf147b}{}\index{X\+M\+L\+Element@{X\+M\+L\+Element}!get\+Attributes@{get\+Attributes}}
+\index{get\+Attributes@{get\+Attributes}!X\+M\+L\+Element@{X\+M\+L\+Element}}
+\subsubsection[{get\+Attributes() const }]{\setlength{\rightskip}{0pt plus 5cm}const map$<$string, string$>$\& X\+M\+L\+Element\+::get\+Attributes (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{class_x_m_l_element_a88d57f7c16383a120e659c101daf147b}
+Getter function for attributes \begin{DoxyReturn}{Returns}
+map object that holds attribute,value pairs of the Xml element. 
+\end{DoxyReturn}
+\hypertarget{class_x_m_l_element_afe078c3f6f8ac606add305b9196a8930}{}\index{X\+M\+L\+Element@{X\+M\+L\+Element}!set\+\_\+element\+\_\+name@{set\+\_\+element\+\_\+name}}
+\index{set\+\_\+element\+\_\+name@{set\+\_\+element\+\_\+name}!X\+M\+L\+Element@{X\+M\+L\+Element}}
+\subsubsection[{set\+\_\+element\+\_\+name(string tag)}]{\setlength{\rightskip}{0pt plus 5cm}void X\+M\+L\+Element\+::set\+\_\+element\+\_\+name (
+\begin{DoxyParamCaption}
+\item[{string}]{tag}
+\end{DoxyParamCaption}
+)}\label{class_x_m_l_element_afe078c3f6f8ac606add305b9196a8930}
+sets element name 
+\begin{DoxyParams}{Parameters}
+{\em tag} & name of the X\+M\+L element \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_x_m_l_element_a7d61b29503d9fcb1170aede0d1f8fc6f}{}\index{X\+M\+L\+Element@{X\+M\+L\+Element}!set\+\_\+line\+\_\+num@{set\+\_\+line\+\_\+num}}
+\index{set\+\_\+line\+\_\+num@{set\+\_\+line\+\_\+num}!X\+M\+L\+Element@{X\+M\+L\+Element}}
+\subsubsection[{set\+\_\+line\+\_\+num(int line)}]{\setlength{\rightskip}{0pt plus 5cm}void X\+M\+L\+Element\+::set\+\_\+line\+\_\+num (
+\begin{DoxyParamCaption}
+\item[{int}]{line}
+\end{DoxyParamCaption}
+)}\label{class_x_m_l_element_a7d61b29503d9fcb1170aede0d1f8fc6f}
+sets line\+\_\+num 
+\begin{DoxyParams}{Parameters}
+{\em line\+\_\+num} & line number of X\+M\+L element. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_x_m_l_element_a865f7f8976d3bbe0820dee4f52f9abfe}{}\index{X\+M\+L\+Element@{X\+M\+L\+Element}!set\+\_\+str\+\_\+content@{set\+\_\+str\+\_\+content}}
+\index{set\+\_\+str\+\_\+content@{set\+\_\+str\+\_\+content}!X\+M\+L\+Element@{X\+M\+L\+Element}}
+\subsubsection[{set\+\_\+str\+\_\+content(string content)}]{\setlength{\rightskip}{0pt plus 5cm}void X\+M\+L\+Element\+::set\+\_\+str\+\_\+content (
+\begin{DoxyParamCaption}
+\item[{string}]{content}
+\end{DoxyParamCaption}
+)}\label{class_x_m_l_element_a865f7f8976d3bbe0820dee4f52f9abfe}
+setter for str\+\_\+content 
+\begin{DoxyParams}{Parameters}
+{\em content} & content of X\+M\+L element \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_x_m_l_element_a75826668ddbc8d736c375e161b25eaee}{}\index{X\+M\+L\+Element@{X\+M\+L\+Element}!attributes@{attributes}}
+\index{attributes@{attributes}!X\+M\+L\+Element@{X\+M\+L\+Element}}
+\subsubsection[{attributes}]{\setlength{\rightskip}{0pt plus 5cm}map$<$string,string$>$ X\+M\+L\+Element\+::attributes\hspace{0.3cm}{\ttfamily [private]}}\label{class_x_m_l_element_a75826668ddbc8d736c375e161b25eaee}
+dictionary for element attributes \hypertarget{class_x_m_l_element_a3b22b2f718295200364d0f178a97eec4}{}\index{X\+M\+L\+Element@{X\+M\+L\+Element}!children@{children}}
+\index{children@{children}!X\+M\+L\+Element@{X\+M\+L\+Element}}
+\subsubsection[{children}]{\setlength{\rightskip}{0pt plus 5cm}vector$<${\bf X\+M\+L\+Element}$\ast$$>$ X\+M\+L\+Element\+::children\hspace{0.3cm}{\ttfamily [private]}}\label{class_x_m_l_element_a3b22b2f718295200364d0f178a97eec4}
+vector of children \hypertarget{class_x_m_l_element_a722f30863988660ebb15ed33be03ac56}{}\index{X\+M\+L\+Element@{X\+M\+L\+Element}!element\+\_\+name@{element\+\_\+name}}
+\index{element\+\_\+name@{element\+\_\+name}!X\+M\+L\+Element@{X\+M\+L\+Element}}
+\subsubsection[{element\+\_\+name}]{\setlength{\rightskip}{0pt plus 5cm}string X\+M\+L\+Element\+::element\+\_\+name\hspace{0.3cm}{\ttfamily [private]}}\label{class_x_m_l_element_a722f30863988660ebb15ed33be03ac56}
+the name of the X\+M\+L element \hypertarget{class_x_m_l_element_a54da22f991a728bae20540dc00ee7778}{}\index{X\+M\+L\+Element@{X\+M\+L\+Element}!line\+\_\+num@{line\+\_\+num}}
+\index{line\+\_\+num@{line\+\_\+num}!X\+M\+L\+Element@{X\+M\+L\+Element}}
+\subsubsection[{line\+\_\+num}]{\setlength{\rightskip}{0pt plus 5cm}int X\+M\+L\+Element\+::line\+\_\+num\hspace{0.3cm}{\ttfamily [private]}}\label{class_x_m_l_element_a54da22f991a728bae20540dc00ee7778}
+Object that stores information about an X\+M\+L element \begin{DoxyAuthor}{Author}
+Cullin Lam 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+4.\+0line number where X\+M\+L element was found 
+\end{DoxyVersion}
+\hypertarget{class_x_m_l_element_a2d4e27f50c33a8faa5f825199e921475}{}\index{X\+M\+L\+Element@{X\+M\+L\+Element}!str\+\_\+content@{str\+\_\+content}}
+\index{str\+\_\+content@{str\+\_\+content}!X\+M\+L\+Element@{X\+M\+L\+Element}}
+\subsubsection[{str\+\_\+content}]{\setlength{\rightskip}{0pt plus 5cm}string X\+M\+L\+Element\+::str\+\_\+content = \char`\"{}\{E\+M\+P\+T\+Y\}\char`\"{}\hspace{0.3cm}{\ttfamily [private]}}\label{class_x_m_l_element_a2d4e27f50c33a8faa5f825199e921475}
+the textual content of the element 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_x_m_l_element_8h}{X\+M\+L\+Element.\+h}\item 
+\hyperlink{_x_m_l_element_8cpp}{X\+M\+L\+Element.\+cpp}\end{DoxyCompactItemize}

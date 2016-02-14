@@ -1,0 +1,182 @@
+\hypertarget{main_8cpp}{}\section{main.\+cpp File Reference}
+\label{main_8cpp}\index{main.\+cpp@{main.\+cpp}}
+{\ttfamily \#include $<$iostream$>$}\\*
+{\ttfamily \#include $<$sstream$>$}\\*
+{\ttfamily \#include $<$string$>$}\\*
+{\ttfamily \#include $<$regex$>$}\\*
+{\ttfamily \#include $<$cstdlib$>$}\\*
+{\ttfamily \#include \char`\"{}dynamic\+\_\+dom.\+h\char`\"{}}\\*
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{main_8cpp_a258f5d52c094bad07919f59a42faa103}{Parse\+Command\+String} (string str\+User\+Entry)
+\item 
+void \hyperlink{main_8cpp_a24d6c603a081dfd1a310cc833889b3d3}{Process\+Add\+Command} (string str\+User\+Entry)
+\item 
+void \hyperlink{main_8cpp_a362701e540f56bd09bcfd974d4ecd299}{Process\+Add\+Root\+Command} (string str\+User\+Entry)
+\item 
+void \hyperlink{main_8cpp_ae237b89cb9baee18fc1a793a7f76b2b6}{Process\+Add\+Element\+Command} (string str\+User\+Entry)
+\item 
+void \hyperlink{main_8cpp_a397d0e0c4ae2e866f324b9fee0f32181}{Process\+Add\+Attribute\+Command} (string str\+User\+Entry)
+\item 
+void \hyperlink{main_8cpp_a1416a46200528cce33670cc6590ec00a}{Process\+Print\+Command} (string str\+User\+Entry)
+\item 
+void \hyperlink{main_8cpp_a7714ae3434edff850fafc02ad7d0eb07}{Process\+Remove\+Command} (string str\+User\+Entry)
+\item 
+void \hyperlink{main_8cpp_a774d6b6c681a6e23eacc6576ea947125}{Process\+Remove\+Child\+Command} (string str\+User\+Entry)
+\item 
+void \hyperlink{main_8cpp_a963a8f891b42393fea75ad35227e1f66}{Process\+Remove\+Attr\+Command} (string str\+User\+Entry)
+\item 
+int \hyperlink{main_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}{main} (int argc, char $\ast$$\ast$argv)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_dom_builder}{Dom\+Builder} \hyperlink{main_8cpp_aef9c3cabbad1d2323a25c041216e33cf}{my}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+Cullin Lam, \href{mailto:clam@cs.uml.edu}{\tt clam@cs.\+uml.\+edu}
+\end{DoxyAuthor}
+Created on December 7, 2015, 10\+:23 A\+M
+
+This file contains the main function that process user commands and translates commands to \hyperlink{class_dom_builder}{Dom\+Builder} calls
+
+starter code provided by Jesse Heines 
+
+\subsection{Function Documentation}
+\hypertarget{main_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}{}\index{main.\+cpp@{main.\+cpp}!main@{main}}
+\index{main@{main}!main.\+cpp@{main.\+cpp}}
+\subsubsection[{main(int argc, char $\ast$$\ast$argv)}]{\setlength{\rightskip}{0pt plus 5cm}int main (
+\begin{DoxyParamCaption}
+\item[{int}]{argc, }
+\item[{char $\ast$$\ast$}]{argv}
+\end{DoxyParamCaption}
+)}\label{main_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}
+The standard C++ main function. 
+\begin{DoxyParams}{Parameters}
+{\em argc} & number of command line arguments \\
+\hline
+{\em argv} & array of command line arguments \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\hypertarget{main_8cpp_a258f5d52c094bad07919f59a42faa103}{}\index{main.\+cpp@{main.\+cpp}!Parse\+Command\+String@{Parse\+Command\+String}}
+\index{Parse\+Command\+String@{Parse\+Command\+String}!main.\+cpp@{main.\+cpp}}
+\subsubsection[{Parse\+Command\+String(string str\+User\+Entry)}]{\setlength{\rightskip}{0pt plus 5cm}void Parse\+Command\+String (
+\begin{DoxyParamCaption}
+\item[{string}]{str\+User\+Entry}
+\end{DoxyParamCaption}
+)}\label{main_8cpp_a258f5d52c094bad07919f59a42faa103}
+Check for a valid basic command. 
+\begin{DoxyParams}{Parameters}
+{\em str\+User\+Entry} & command string entered by the user \\
+\hline
+\end{DoxyParams}
+\hypertarget{main_8cpp_a397d0e0c4ae2e866f324b9fee0f32181}{}\index{main.\+cpp@{main.\+cpp}!Process\+Add\+Attribute\+Command@{Process\+Add\+Attribute\+Command}}
+\index{Process\+Add\+Attribute\+Command@{Process\+Add\+Attribute\+Command}!main.\+cpp@{main.\+cpp}}
+\subsubsection[{Process\+Add\+Attribute\+Command(string str\+User\+Entry)}]{\setlength{\rightskip}{0pt plus 5cm}void Process\+Add\+Attribute\+Command (
+\begin{DoxyParamCaption}
+\item[{string}]{str\+User\+Entry}
+\end{DoxyParamCaption}
+)}\label{main_8cpp_a397d0e0c4ae2e866f324b9fee0f32181}
+Handle an add attribute command entered by the user 
+\begin{DoxyParams}{Parameters}
+{\em str\+User\+Entry} & command string entered by the user \\
+\hline
+\end{DoxyParams}
+\hypertarget{main_8cpp_a24d6c603a081dfd1a310cc833889b3d3}{}\index{main.\+cpp@{main.\+cpp}!Process\+Add\+Command@{Process\+Add\+Command}}
+\index{Process\+Add\+Command@{Process\+Add\+Command}!main.\+cpp@{main.\+cpp}}
+\subsubsection[{Process\+Add\+Command(string str\+User\+Entry)}]{\setlength{\rightskip}{0pt plus 5cm}void Process\+Add\+Command (
+\begin{DoxyParamCaption}
+\item[{string}]{str\+User\+Entry}
+\end{DoxyParamCaption}
+)}\label{main_8cpp_a24d6c603a081dfd1a310cc833889b3d3}
+Handle an add command entered by the user 
+\begin{DoxyParams}{Parameters}
+{\em str\+User\+Entry} & command string entered by the user \\
+\hline
+\end{DoxyParams}
+\hypertarget{main_8cpp_ae237b89cb9baee18fc1a793a7f76b2b6}{}\index{main.\+cpp@{main.\+cpp}!Process\+Add\+Element\+Command@{Process\+Add\+Element\+Command}}
+\index{Process\+Add\+Element\+Command@{Process\+Add\+Element\+Command}!main.\+cpp@{main.\+cpp}}
+\subsubsection[{Process\+Add\+Element\+Command(string str\+User\+Entry)}]{\setlength{\rightskip}{0pt plus 5cm}void Process\+Add\+Element\+Command (
+\begin{DoxyParamCaption}
+\item[{string}]{str\+User\+Entry}
+\end{DoxyParamCaption}
+)}\label{main_8cpp_ae237b89cb9baee18fc1a793a7f76b2b6}
+Handle an add element command entered by the user, if last argument is supplied element text will also be created 
+\begin{DoxyParams}{Parameters}
+{\em str\+User\+Entry} & command string entered by the user \\
+\hline
+\end{DoxyParams}
+\hypertarget{main_8cpp_a362701e540f56bd09bcfd974d4ecd299}{}\index{main.\+cpp@{main.\+cpp}!Process\+Add\+Root\+Command@{Process\+Add\+Root\+Command}}
+\index{Process\+Add\+Root\+Command@{Process\+Add\+Root\+Command}!main.\+cpp@{main.\+cpp}}
+\subsubsection[{Process\+Add\+Root\+Command(string str\+User\+Entry)}]{\setlength{\rightskip}{0pt plus 5cm}void Process\+Add\+Root\+Command (
+\begin{DoxyParamCaption}
+\item[{string}]{str\+User\+Entry}
+\end{DoxyParamCaption}
+)}\label{main_8cpp_a362701e540f56bd09bcfd974d4ecd299}
+Handle an add root command entered by user 
+\begin{DoxyParams}{Parameters}
+{\em str\+User\+Entry} & command string entered by the user \\
+\hline
+\end{DoxyParams}
+\hypertarget{main_8cpp_a1416a46200528cce33670cc6590ec00a}{}\index{main.\+cpp@{main.\+cpp}!Process\+Print\+Command@{Process\+Print\+Command}}
+\index{Process\+Print\+Command@{Process\+Print\+Command}!main.\+cpp@{main.\+cpp}}
+\subsubsection[{Process\+Print\+Command(string str\+User\+Entry)}]{\setlength{\rightskip}{0pt plus 5cm}void Process\+Print\+Command (
+\begin{DoxyParamCaption}
+\item[{string}]{str\+User\+Entry}
+\end{DoxyParamCaption}
+)}\label{main_8cpp_a1416a46200528cce33670cc6590ec00a}
+Handle a print command entered by the user if alpha argument supplied Dom nodes will be outputted alphabetically 
+\begin{DoxyParams}{Parameters}
+{\em str\+User\+Entry} & command string entered by the user \\
+\hline
+\end{DoxyParams}
+\hypertarget{main_8cpp_a963a8f891b42393fea75ad35227e1f66}{}\index{main.\+cpp@{main.\+cpp}!Process\+Remove\+Attr\+Command@{Process\+Remove\+Attr\+Command}}
+\index{Process\+Remove\+Attr\+Command@{Process\+Remove\+Attr\+Command}!main.\+cpp@{main.\+cpp}}
+\subsubsection[{Process\+Remove\+Attr\+Command(string str\+User\+Entry)}]{\setlength{\rightskip}{0pt plus 5cm}void Process\+Remove\+Attr\+Command (
+\begin{DoxyParamCaption}
+\item[{string}]{str\+User\+Entry}
+\end{DoxyParamCaption}
+)}\label{main_8cpp_a963a8f891b42393fea75ad35227e1f66}
+Handles remove attribute command 
+\begin{DoxyParams}{Parameters}
+{\em str\+User\+Entry} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{main_8cpp_a774d6b6c681a6e23eacc6576ea947125}{}\index{main.\+cpp@{main.\+cpp}!Process\+Remove\+Child\+Command@{Process\+Remove\+Child\+Command}}
+\index{Process\+Remove\+Child\+Command@{Process\+Remove\+Child\+Command}!main.\+cpp@{main.\+cpp}}
+\subsubsection[{Process\+Remove\+Child\+Command(string str\+User\+Entry)}]{\setlength{\rightskip}{0pt plus 5cm}void Process\+Remove\+Child\+Command (
+\begin{DoxyParamCaption}
+\item[{string}]{str\+User\+Entry}
+\end{DoxyParamCaption}
+)}\label{main_8cpp_a774d6b6c681a6e23eacc6576ea947125}
+Handle an remove child command entered by the user 
+\begin{DoxyParams}{Parameters}
+{\em str\+User\+Entry} & command string entered by the user \\
+\hline
+\end{DoxyParams}
+\hypertarget{main_8cpp_a7714ae3434edff850fafc02ad7d0eb07}{}\index{main.\+cpp@{main.\+cpp}!Process\+Remove\+Command@{Process\+Remove\+Command}}
+\index{Process\+Remove\+Command@{Process\+Remove\+Command}!main.\+cpp@{main.\+cpp}}
+\subsubsection[{Process\+Remove\+Command(string str\+User\+Entry)}]{\setlength{\rightskip}{0pt plus 5cm}void Process\+Remove\+Command (
+\begin{DoxyParamCaption}
+\item[{string}]{str\+User\+Entry}
+\end{DoxyParamCaption}
+)}\label{main_8cpp_a7714ae3434edff850fafc02ad7d0eb07}
+Handle an remove command entered by the user 
+\begin{DoxyParams}{Parameters}
+{\em str\+User\+Entry} & command string entered by the user \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Variable Documentation}
+\hypertarget{main_8cpp_aef9c3cabbad1d2323a25c041216e33cf}{}\index{main.\+cpp@{main.\+cpp}!my@{my}}
+\index{my@{my}!main.\+cpp@{main.\+cpp}}
+\subsubsection[{my}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Dom\+Builder} my}\label{main_8cpp_aef9c3cabbad1d2323a25c041216e33cf}
+global \hyperlink{class_dom_builder}{Dom\+Builder} object 

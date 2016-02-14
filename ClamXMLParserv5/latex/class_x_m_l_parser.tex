@@ -1,0 +1,260 @@
+\hypertarget{class_x_m_l_parser}{}\section{X\+M\+L\+Parser Class Reference}
+\label{class_x_m_l_parser}\index{X\+M\+L\+Parser@{X\+M\+L\+Parser}}
+
+
+{\ttfamily \#include $<$X\+M\+L\+Parser.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_x_m_l_parser_adb81d764261b1d0e31c9ecb4da962a54}{read\+\_\+\+X\+M\+L} (const string file\+\_\+name)
+\item 
+void \hyperlink{class_x_m_l_parser_ac83854507080fb137a8235aebd85fe82}{read\+\_\+\+X\+M\+L\+\_\+elements} (const string file\+\_\+name)
+\item 
+void \hyperlink{class_x_m_l_parser_a3185e16eab0e9a612cb4b184917224de}{output\+\_\+elements} ()
+\item 
+void \hyperlink{class_x_m_l_parser_ab894a59fd3499e352a78dd58a316745f}{Show\+State} (\hyperlink{_x_m_l_parser_8h_acf067a9f09c2b2135f1a80d61e5eb253}{Parser\+State} state)
+\item 
+int \hyperlink{class_x_m_l_parser_a58677ce4e57656578db2b60a96a9b0fa}{parse\+\_\+\+X\+M\+L} (const string file\+\_\+name)
+\item 
+void \hyperlink{class_x_m_l_parser_a276ee49ab69d353541499c0b012e3524}{parse\+\_\+\+X\+M\+L\+\_\+elements} (const string file\+\_\+name)
+\item 
+void \hyperlink{class_x_m_l_parser_a64e7d03169d059ba69dddfb984ba2d06}{traverse\+\_\+element\+\_\+tree} (\hyperlink{class_x_m_l_element}{X\+M\+L\+Element} $\ast$curr, unsigned level)
+\item 
+int \hyperlink{class_x_m_l_parser_ad7d27954988bb2d495f091dbb1d665e7}{to\+\_\+json} (const string in\+\_\+file\+\_\+name, const string out\+\_\+file\+\_\+name)
+\item 
+\hyperlink{class_x_m_l_element}{X\+M\+L\+Element} $\ast$ \hyperlink{class_x_m_l_parser_affe95b88edc32d97a503d28e6d8bece7}{get\+\_\+root} ()
+\item 
+\hyperlink{_x_m_l_parser_8h_acf067a9f09c2b2135f1a80d61e5eb253}{Parser\+State} \hyperlink{class_x_m_l_parser_a59ecf455aa52d3bf749d42aa2d01e645}{Get\+X\+M\+L\+Data} (string line, string \&element\+\_\+name, string \&str\+\_\+content)
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_x_m_l_parser_a7c01eb1cb72c8e25a3b730c0a9c2cbba}{print\+\_\+stack} (stack$<$ \hyperlink{class_x_m_l_element}{X\+M\+L\+Element} $\ast$ $>$ \&s)
+\item 
+void \hyperlink{class_x_m_l_parser_ae586431c1d737fb3fba7494f35034d50}{write\+\_\+json} (ofstream \&out, \hyperlink{class_x_m_l_element}{X\+M\+L\+Element} $\ast$curr, unsigned level)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_x_m_l_parser_8h_acf067a9f09c2b2135f1a80d61e5eb253}{Parser\+State} \hyperlink{class_x_m_l_parser_a767386879606d4376d48f40d168df804}{curr\+\_\+state} = \hyperlink{_x_m_l_parser_8h_acf067a9f09c2b2135f1a80d61e5eb253a94619ef3a259944e2f7a7b02ffdca5bb}{S\+T\+A\+R\+T\+I\+N\+G\+\_\+\+D\+O\+C\+U\+M\+E\+N\+T}
+\item 
+\hyperlink{class_x_m_l_element}{X\+M\+L\+Element} $\ast$ \hyperlink{class_x_m_l_parser_a2754d1cccc12558fe54596c38509ca62}{root} = N\+U\+L\+L
+\item 
+vector$<$ \hyperlink{class_x_m_l_element}{X\+M\+L\+Element} $\ast$ $>$ \hyperlink{class_x_m_l_parser_aab04c279fc5c88412f481a96410386e1}{element\+\_\+vector}
+\item 
+stack$<$ \hyperlink{class_x_m_l_element}{X\+M\+L\+Element} $\ast$ $>$ \hyperlink{class_x_m_l_parser_a0a58d26870127737a3657b011a242fb4}{unclosed\+\_\+element\+\_\+stack}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Object that provides methods to parse X\+M\+L files \begin{DoxyAuthor}{Author}
+Cullin Lam 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+5.\+0 
+\end{DoxyVersion}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_x_m_l_parser_affe95b88edc32d97a503d28e6d8bece7}{}\index{X\+M\+L\+Parser@{X\+M\+L\+Parser}!get\+\_\+root@{get\+\_\+root}}
+\index{get\+\_\+root@{get\+\_\+root}!X\+M\+L\+Parser@{X\+M\+L\+Parser}}
+\subsubsection[{get\+\_\+root()}]{\setlength{\rightskip}{0pt plus 5cm}{\bf X\+M\+L\+Element} $\ast$ X\+M\+L\+Parser\+::get\+\_\+root (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_x_m_l_parser_affe95b88edc32d97a503d28e6d8bece7}
+returns root element \begin{DoxyReturn}{Returns}
+pointer to root element 
+\end{DoxyReturn}
+\hypertarget{class_x_m_l_parser_a59ecf455aa52d3bf749d42aa2d01e645}{}\index{X\+M\+L\+Parser@{X\+M\+L\+Parser}!Get\+X\+M\+L\+Data@{Get\+X\+M\+L\+Data}}
+\index{Get\+X\+M\+L\+Data@{Get\+X\+M\+L\+Data}!X\+M\+L\+Parser@{X\+M\+L\+Parser}}
+\subsubsection[{Get\+X\+M\+L\+Data(string line, string \&element\+\_\+name, string \&str\+\_\+content)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Parser\+State} X\+M\+L\+Parser\+::\+Get\+X\+M\+L\+Data (
+\begin{DoxyParamCaption}
+\item[{string}]{line, }
+\item[{string \&}]{element\+\_\+name, }
+\item[{string \&}]{str\+\_\+content}
+\end{DoxyParamCaption}
+)}\label{class_x_m_l_parser_a59ecf455aa52d3bf749d42aa2d01e645}
+Gets X\+M\+L data and returns and sets Parser State 
+\begin{DoxyParams}{Parameters}
+{\em line} & line of xml file text \\
+\hline
+{\em element\+\_\+name} & string that will be assigned X\+M\+L element name \\
+\hline
+{\em str\+\_\+content} & string that will be assigned content of X\+M\+L element \\
+\hline
+\end{DoxyParams}
+This function is used during debugging to display the parser state. Args\+: 
+\begin{DoxyParams}{Parameters}
+{\em current\+\_\+state(\+Parser\+State)} & the current parser state \\
+\hline
+{\em line(string)} & line of the X\+M\+L file being parsed \\
+\hline
+{\em element\+\_\+name(string\&)} & name of \hyperlink{class_x_m_l_element}{X\+M\+L\+Element} passed by reference \\
+\hline
+{\em str\+\_\+content(string\&)} & Content of the \hyperlink{class_x_m_l_element}{X\+M\+L\+Element} passed by reference\\
+\hline
+\end{DoxyParams}
+\hypertarget{class_x_m_l_parser_a3185e16eab0e9a612cb4b184917224de}{}\index{X\+M\+L\+Parser@{X\+M\+L\+Parser}!output\+\_\+elements@{output\+\_\+elements}}
+\index{output\+\_\+elements@{output\+\_\+elements}!X\+M\+L\+Parser@{X\+M\+L\+Parser}}
+\subsubsection[{output\+\_\+elements()}]{\setlength{\rightskip}{0pt plus 5cm}void X\+M\+L\+Parser\+::output\+\_\+elements (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_x_m_l_parser_a3185e16eab0e9a612cb4b184917224de}
+outputs X\+M\+L elements in vector container\+: element\+\_\+vector \hypertarget{class_x_m_l_parser_a58677ce4e57656578db2b60a96a9b0fa}{}\index{X\+M\+L\+Parser@{X\+M\+L\+Parser}!parse\+\_\+\+X\+M\+L@{parse\+\_\+\+X\+M\+L}}
+\index{parse\+\_\+\+X\+M\+L@{parse\+\_\+\+X\+M\+L}!X\+M\+L\+Parser@{X\+M\+L\+Parser}}
+\subsubsection[{parse\+\_\+\+X\+M\+L(const string file\+\_\+name)}]{\setlength{\rightskip}{0pt plus 5cm}int X\+M\+L\+Parser\+::parse\+\_\+\+X\+M\+L (
+\begin{DoxyParamCaption}
+\item[{const string}]{file\+\_\+name}
+\end{DoxyParamCaption}
+)}\label{class_x_m_l_parser_a58677ce4e57656578db2b60a96a9b0fa}
+Parses the file for X\+M\+L Elements and checks for well-\/formedness also builds a tree of X\+M\+L Elements and outputs their data 
+\begin{DoxyParams}{Parameters}
+{\em file\+\_\+name} & path of X\+M\+L file to be parsed \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+integer indicating either E\+X\+I\+T\+\_\+\+S\+U\+C\+C\+E\+S\+S or E\+X\+I\+T\+\_\+\+F\+A\+I\+L\+U\+R\+E 
+\end{DoxyReturn}
+\hypertarget{class_x_m_l_parser_a276ee49ab69d353541499c0b012e3524}{}\index{X\+M\+L\+Parser@{X\+M\+L\+Parser}!parse\+\_\+\+X\+M\+L\+\_\+elements@{parse\+\_\+\+X\+M\+L\+\_\+elements}}
+\index{parse\+\_\+\+X\+M\+L\+\_\+elements@{parse\+\_\+\+X\+M\+L\+\_\+elements}!X\+M\+L\+Parser@{X\+M\+L\+Parser}}
+\subsubsection[{parse\+\_\+\+X\+M\+L\+\_\+elements(const string file\+\_\+name)}]{\setlength{\rightskip}{0pt plus 5cm}void X\+M\+L\+Parser\+::parse\+\_\+\+X\+M\+L\+\_\+elements (
+\begin{DoxyParamCaption}
+\item[{const string}]{file\+\_\+name}
+\end{DoxyParamCaption}
+)}\label{class_x_m_l_parser_a276ee49ab69d353541499c0b012e3524}
+Finds X\+M\+L elements in the xml document Deprecated in this version 
+\begin{DoxyParams}{Parameters}
+{\em file\+\_\+name} & path of X\+M\+L file to be parsed \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+E\+X\+I\+T\+\_\+\+S\+U\+C\+C\+E\+S\+S or E\+X\+I\+T\+\_\+\+F\+A\+I\+L\+U\+R\+E 
+\end{DoxyReturn}
+\hypertarget{class_x_m_l_parser_a7c01eb1cb72c8e25a3b730c0a9c2cbba}{}\index{X\+M\+L\+Parser@{X\+M\+L\+Parser}!print\+\_\+stack@{print\+\_\+stack}}
+\index{print\+\_\+stack@{print\+\_\+stack}!X\+M\+L\+Parser@{X\+M\+L\+Parser}}
+\subsubsection[{print\+\_\+stack(stack$<$ X\+M\+L\+Element $\ast$ $>$ \&s)}]{\setlength{\rightskip}{0pt plus 5cm}void X\+M\+L\+Parser\+::print\+\_\+stack (
+\begin{DoxyParamCaption}
+\item[{stack$<$ {\bf X\+M\+L\+Element} $\ast$ $>$ \&}]{s}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{class_x_m_l_parser_a7c01eb1cb72c8e25a3b730c0a9c2cbba}
+outputs stack contents leaving contents in place source -\/ \href{http://stackoverflow.com/questions/4523178/how-to-print-out-all-elements-in-a-stdstack-or-stdqueue-conveniently}{\tt http\+://stackoverflow.\+com/questions/4523178/how-\/to-\/print-\/out-\/all-\/elements-\/in-\/a-\/stdstack-\/or-\/stdqueue-\/conveniently} 
+\begin{DoxyParams}{Parameters}
+{\em s} & a stack of \hyperlink{class_x_m_l_element}{X\+M\+L\+Element} pointers, passed by reference \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_x_m_l_parser_adb81d764261b1d0e31c9ecb4da962a54}{}\index{X\+M\+L\+Parser@{X\+M\+L\+Parser}!read\+\_\+\+X\+M\+L@{read\+\_\+\+X\+M\+L}}
+\index{read\+\_\+\+X\+M\+L@{read\+\_\+\+X\+M\+L}!X\+M\+L\+Parser@{X\+M\+L\+Parser}}
+\subsubsection[{read\+\_\+\+X\+M\+L(const string file\+\_\+name)}]{\setlength{\rightskip}{0pt plus 5cm}void X\+M\+L\+Parser\+::read\+\_\+\+X\+M\+L (
+\begin{DoxyParamCaption}
+\item[{const string}]{file\+\_\+name}
+\end{DoxyParamCaption}
+)}\label{class_x_m_l_parser_adb81d764261b1d0e31c9ecb4da962a54}
+outputs line number and line for each line in the X\+M\+L file 
+\begin{DoxyParams}{Parameters}
+{\em file\+\_\+name} & path of X\+M\+L file to be parsed \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_x_m_l_parser_ac83854507080fb137a8235aebd85fe82}{}\index{X\+M\+L\+Parser@{X\+M\+L\+Parser}!read\+\_\+\+X\+M\+L\+\_\+elements@{read\+\_\+\+X\+M\+L\+\_\+elements}}
+\index{read\+\_\+\+X\+M\+L\+\_\+elements@{read\+\_\+\+X\+M\+L\+\_\+elements}!X\+M\+L\+Parser@{X\+M\+L\+Parser}}
+\subsubsection[{read\+\_\+\+X\+M\+L\+\_\+elements(const string file\+\_\+name)}]{\setlength{\rightskip}{0pt plus 5cm}void X\+M\+L\+Parser\+::read\+\_\+\+X\+M\+L\+\_\+elements (
+\begin{DoxyParamCaption}
+\item[{const string}]{file\+\_\+name}
+\end{DoxyParamCaption}
+)}\label{class_x_m_l_parser_ac83854507080fb137a8235aebd85fe82}
+stores X\+M\+L elements found in the X\+M\+L file in vector container 
+\begin{DoxyParams}{Parameters}
+{\em file\+\_\+name} & path of X\+M\+L file to be parsed \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_x_m_l_parser_ab894a59fd3499e352a78dd58a316745f}{}\index{X\+M\+L\+Parser@{X\+M\+L\+Parser}!Show\+State@{Show\+State}}
+\index{Show\+State@{Show\+State}!X\+M\+L\+Parser@{X\+M\+L\+Parser}}
+\subsubsection[{Show\+State(\+Parser\+State state)}]{\setlength{\rightskip}{0pt plus 5cm}void X\+M\+L\+Parser\+::\+Show\+State (
+\begin{DoxyParamCaption}
+\item[{{\bf Parser\+State}}]{state}
+\end{DoxyParamCaption}
+)}\label{class_x_m_l_parser_ab894a59fd3499e352a78dd58a316745f}
+This function is used during debugging to display the parser state source -\/ Jesse Heines 
+\begin{DoxyParams}{Parameters}
+{\em state} & state of the parser\\
+\hline
+\end{DoxyParams}
+This function is used during debugging to display the parser state. 
+\begin{DoxyParams}{Parameters}
+{\em ps} & the parser state \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_x_m_l_parser_ad7d27954988bb2d495f091dbb1d665e7}{}\index{X\+M\+L\+Parser@{X\+M\+L\+Parser}!to\+\_\+json@{to\+\_\+json}}
+\index{to\+\_\+json@{to\+\_\+json}!X\+M\+L\+Parser@{X\+M\+L\+Parser}}
+\subsubsection[{to\+\_\+json(const string in\+\_\+file\+\_\+name, const string out\+\_\+file\+\_\+name)}]{\setlength{\rightskip}{0pt plus 5cm}int X\+M\+L\+Parser\+::to\+\_\+json (
+\begin{DoxyParamCaption}
+\item[{const string}]{in\+\_\+file\+\_\+name, }
+\item[{const string}]{out\+\_\+file\+\_\+name}
+\end{DoxyParamCaption}
+)}\label{class_x_m_l_parser_ad7d27954988bb2d495f091dbb1d665e7}
+Converts an xml file into a new json file 
+\begin{DoxyParams}{Parameters}
+{\em in\+\_\+file\+\_\+name} & path of the xml file to be converted \\
+\hline
+{\em out\+\_\+file\+\_\+name} & path of the json file to be created \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+E\+X\+I\+T\+\_\+\+S\+U\+C\+C\+E\+S\+S or E\+X\+I\+T\+\_\+\+F\+A\+I\+L\+U\+R\+E 
+\end{DoxyReturn}
+\hypertarget{class_x_m_l_parser_a64e7d03169d059ba69dddfb984ba2d06}{}\index{X\+M\+L\+Parser@{X\+M\+L\+Parser}!traverse\+\_\+element\+\_\+tree@{traverse\+\_\+element\+\_\+tree}}
+\index{traverse\+\_\+element\+\_\+tree@{traverse\+\_\+element\+\_\+tree}!X\+M\+L\+Parser@{X\+M\+L\+Parser}}
+\subsubsection[{traverse\+\_\+element\+\_\+tree(\+X\+M\+L\+Element $\ast$curr, unsigned level)}]{\setlength{\rightskip}{0pt plus 5cm}void X\+M\+L\+Parser\+::traverse\+\_\+element\+\_\+tree (
+\begin{DoxyParamCaption}
+\item[{{\bf X\+M\+L\+Element} $\ast$}]{curr, }
+\item[{unsigned}]{level}
+\end{DoxyParamCaption}
+)}\label{class_x_m_l_parser_a64e7d03169d059ba69dddfb984ba2d06}
+Recursively travels to each element in the tree and outputs its information and tree level Helper function for parse\+\_\+\+X\+M\+L\+\_\+elements 
+\begin{DoxyParams}{Parameters}
+{\em curr} & pointer to current \hyperlink{class_x_m_l_element}{X\+M\+L\+Element} \\
+\hline
+{\em level} & current tree level depth \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_x_m_l_parser_ae586431c1d737fb3fba7494f35034d50}{}\index{X\+M\+L\+Parser@{X\+M\+L\+Parser}!write\+\_\+json@{write\+\_\+json}}
+\index{write\+\_\+json@{write\+\_\+json}!X\+M\+L\+Parser@{X\+M\+L\+Parser}}
+\subsubsection[{write\+\_\+json(ofstream \&out, X\+M\+L\+Element $\ast$curr, unsigned level)}]{\setlength{\rightskip}{0pt plus 5cm}void X\+M\+L\+Parser\+::write\+\_\+json (
+\begin{DoxyParamCaption}
+\item[{ofstream \&}]{out, }
+\item[{{\bf X\+M\+L\+Element} $\ast$}]{curr, }
+\item[{unsigned}]{level}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\label{class_x_m_l_parser_ae586431c1d737fb3fba7494f35034d50}
+Recursively travels to each node in element tree and outputs data to a json file 
+\begin{DoxyParams}{Parameters}
+{\em out} & file stream object for output \\
+\hline
+{\em curr} & pointer to current \hyperlink{class_x_m_l_element}{X\+M\+L\+Element} in the tree \\
+\hline
+{\em lvl} & current tree depth \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_x_m_l_parser_a767386879606d4376d48f40d168df804}{}\index{X\+M\+L\+Parser@{X\+M\+L\+Parser}!curr\+\_\+state@{curr\+\_\+state}}
+\index{curr\+\_\+state@{curr\+\_\+state}!X\+M\+L\+Parser@{X\+M\+L\+Parser}}
+\subsubsection[{curr\+\_\+state}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Parser\+State} X\+M\+L\+Parser\+::curr\+\_\+state = {\bf S\+T\+A\+R\+T\+I\+N\+G\+\_\+\+D\+O\+C\+U\+M\+E\+N\+T}\hspace{0.3cm}{\ttfamily [private]}}\label{class_x_m_l_parser_a767386879606d4376d48f40d168df804}
+Current parser state \hypertarget{class_x_m_l_parser_aab04c279fc5c88412f481a96410386e1}{}\index{X\+M\+L\+Parser@{X\+M\+L\+Parser}!element\+\_\+vector@{element\+\_\+vector}}
+\index{element\+\_\+vector@{element\+\_\+vector}!X\+M\+L\+Parser@{X\+M\+L\+Parser}}
+\subsubsection[{element\+\_\+vector}]{\setlength{\rightskip}{0pt plus 5cm}vector$<${\bf X\+M\+L\+Element}$\ast$$>$ X\+M\+L\+Parser\+::element\+\_\+vector\hspace{0.3cm}{\ttfamily [private]}}\label{class_x_m_l_parser_aab04c279fc5c88412f481a96410386e1}
+container to hold all found X\+M\+L\+Elements \hypertarget{class_x_m_l_parser_a2754d1cccc12558fe54596c38509ca62}{}\index{X\+M\+L\+Parser@{X\+M\+L\+Parser}!root@{root}}
+\index{root@{root}!X\+M\+L\+Parser@{X\+M\+L\+Parser}}
+\subsubsection[{root}]{\setlength{\rightskip}{0pt plus 5cm}{\bf X\+M\+L\+Element}$\ast$ X\+M\+L\+Parser\+::root = N\+U\+L\+L\hspace{0.3cm}{\ttfamily [private]}}\label{class_x_m_l_parser_a2754d1cccc12558fe54596c38509ca62}
+Pointer to Root Element \hypertarget{class_x_m_l_parser_a0a58d26870127737a3657b011a242fb4}{}\index{X\+M\+L\+Parser@{X\+M\+L\+Parser}!unclosed\+\_\+element\+\_\+stack@{unclosed\+\_\+element\+\_\+stack}}
+\index{unclosed\+\_\+element\+\_\+stack@{unclosed\+\_\+element\+\_\+stack}!X\+M\+L\+Parser@{X\+M\+L\+Parser}}
+\subsubsection[{unclosed\+\_\+element\+\_\+stack}]{\setlength{\rightskip}{0pt plus 5cm}stack$<${\bf X\+M\+L\+Element}$\ast$$>$ X\+M\+L\+Parser\+::unclosed\+\_\+element\+\_\+stack\hspace{0.3cm}{\ttfamily [private]}}\label{class_x_m_l_parser_a0a58d26870127737a3657b011a242fb4}
+Unclosed Elements stack 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_x_m_l_parser_8h}{X\+M\+L\+Parser.\+h}\item 
+\hyperlink{_x_m_l_parser_8cpp}{X\+M\+L\+Parser.\+cpp}\end{DoxyCompactItemize}

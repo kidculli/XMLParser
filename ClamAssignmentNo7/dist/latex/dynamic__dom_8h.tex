@@ -1,0 +1,56 @@
+\hypertarget{dynamic__dom_8h}{}\section{dynamic\+\_\+dom.\+h File Reference}
+\label{dynamic__dom_8h}\index{dynamic\+\_\+dom.\+h@{dynamic\+\_\+dom.\+h}}
+{\ttfamily \#include $<$xercesc/util/\+Platform\+Utils.\+hpp$>$}\\*
+{\ttfamily \#include $<$xercesc/util/\+X\+M\+L\+String.\+hpp$>$}\\*
+{\ttfamily \#include $<$xercesc/dom/\+D\+O\+M.\+hpp$>$}\\*
+{\ttfamily \#include $<$vector$>$}\\*
+{\ttfamily \#include $<$iomanip$>$}\\*
+{\ttfamily \#include $<$algorithm$>$}\\*
+{\ttfamily \#include $<$string$>$}\\*
+{\ttfamily \#include $<$xercesc/dom/\+D\+O\+M\+Document\+Traversal.\+hpp$>$}\\*
+{\ttfamily \#include $<$xercesc/dom/\+D\+O\+M\+Tree\+Walker.\+hpp$>$}\\*
+{\ttfamily \#include $<$xercesc/dom/\+D\+O\+M\+Node.\+hpp$>$}\\*
+{\ttfamily \#include $<$xercesc/dom/\+D\+O\+M\+Node\+Iterator.\+hpp$>$}\\*
+{\ttfamily \#include $<$xercesc/util/\+Out\+Of\+Memory\+Exception.\+hpp$>$}\\*
+{\ttfamily \#include $<$xercesc/framework/\+Std\+Out\+Format\+Target.\+hpp$>$}\\*
+{\ttfamily \#include $<$xercesc/parsers/\+Xerces\+D\+O\+M\+Parser.\+hpp$>$}\\*
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_x_str}{X\+Str}
+\item 
+class \hyperlink{class_dom_builder}{Dom\+Builder}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{dynamic__dom_8h_ae617ec11710a628ecd412c46a933832c}{X}(str)~\hyperlink{class_x_str}{X\+Str}(str).unicode\+Form()
+\item 
+\#define \hyperlink{dynamic__dom_8h_afe05c676bac41355550f64ff5a162c98}{x}(str)~X\+M\+L\+String\+::transcode(str)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+Cullin Lam \href{mailto:clam@cs.uml.edu}{\tt clam@cs.\+uml.\+edu}
+\end{DoxyAuthor}
+This file declares functions used to build and manipulate the Xercesc Dom Object Created 2015-\/12-\/03
+
+Last Updated 2015-\/12-\/03 
+
+\subsection{Macro Definition Documentation}
+\hypertarget{dynamic__dom_8h_ae617ec11710a628ecd412c46a933832c}{}\index{dynamic\+\_\+dom.\+h@{dynamic\+\_\+dom.\+h}!X@{X}}
+\index{X@{X}!dynamic\+\_\+dom.\+h@{dynamic\+\_\+dom.\+h}}
+\subsubsection[{X}]{\setlength{\rightskip}{0pt plus 5cm}\#define X(
+\begin{DoxyParamCaption}
+\item[{}]{str}
+\end{DoxyParamCaption}
+)~{\bf X\+Str}(str).unicode\+Form()}\label{dynamic__dom_8h_ae617ec11710a628ecd412c46a933832c}
+X converts a c-\/string to an X\+M\+L\+Ch$\ast$ \hypertarget{dynamic__dom_8h_afe05c676bac41355550f64ff5a162c98}{}\index{dynamic\+\_\+dom.\+h@{dynamic\+\_\+dom.\+h}!x@{x}}
+\index{x@{x}!dynamic\+\_\+dom.\+h@{dynamic\+\_\+dom.\+h}}
+\subsubsection[{x}]{\setlength{\rightskip}{0pt plus 5cm}\#define x(
+\begin{DoxyParamCaption}
+\item[{}]{str}
+\end{DoxyParamCaption}
+)~X\+M\+L\+String\+::transcode(str)}\label{dynamic__dom_8h_afe05c676bac41355550f64ff5a162c98}
+x converts a X\+M\+L\+Ch$\ast$ to a c string 

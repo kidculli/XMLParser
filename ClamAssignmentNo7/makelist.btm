@@ -1,0 +1,65 @@
+@echo off
+
+: File:  C:\makelist.btm
+: Jesse M. Heines, UMass Lowell Computer Science, heines@cs.uml.edu
+: Copyright (c) 2009 by Jesse M. Heines.  All rights reserved.  May be freely 
+:   copied or excerpted for educational purposes with credit to the author.
+: updated by JMH on April 07, 2003 at 01:07 PM
+: updated by JMH on September 23, 2009 at 4:01 PM
+: updated by JMH on March 7, 2011 at 4:13 PM
+: updated by JMH on November 8, 2015 at 10:11 PM
+
+
+: set the default output file name below and then provide the list of files to be processed
+
+
+: set default output file name
+
+set outfile=AssignmentNo7StarterCode-listing.txt
+
+if [%1] != [] set outfile=%1
+
+
+: make files displayable under a browser
+
+: copy *.htm *.txt
+: copy *.js  *.txt
+
+
+: set location of utility routines
+
+set rout=C:\C-Drive\Routines
+iff [%computername%] == [JUDY] .or. [%computername%] == [ABRAHAM] then
+  set rout=D:\C-Drive\Routines
+endiff
+iff [%computername%]==[OSCAR] then 
+  set rout=E:\C-Drive\Routines 
+endiff
+
+
+: timestamp
+
+call timestamp %outfile
+type %rout\break.txt >> %outfile
+
+
+: alias the onefile command
+
+alias onefile `echo %1 >> %outfile %+ @type %rout\breakline.txt >> %outfile %+ @type %1 %rout\break.txt >> %outfile %+ echo Processed %1`
+echo.
+
+: make list of all files
+
+onefile main.cpp
+onefile jmhUtilities.h
+onefile jmhUtilities.cpp
+
+
+: create htm file
+:   (1)  must replace < with &lt; when done
+:   (2)  possibly EOF character at end of file before numbering lines
+
+copy %outfile *.htm >> nul
+
+
+:exit

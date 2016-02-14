@@ -1,0 +1,114 @@
+\hypertarget{classjmh_utilities}{}\section{jmh\+Utilities Class Reference}
+\label{classjmh_utilities}\index{jmh\+Utilities@{jmh\+Utilities}}
+
+
+{\ttfamily \#include $<$jmh\+Utilities.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classjmh_utilities_a45857044013b42a8f9b3f4fee7942c64}{jmh\+Utilities} ()
+\item 
+\hyperlink{classjmh_utilities_adfe2a874ad25990a691342deead683a5}{jmh\+Utilities} (const \hyperlink{classjmh_utilities}{jmh\+Utilities} \&orig)
+\item 
+virtual \hyperlink{classjmh_utilities_a398e9680ae39464f8bb6496fbc8f69ad}{$\sim$jmh\+Utilities} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static string \hyperlink{classjmh_utilities_a616b99ea8f748dacbbc2775a873d898c}{trim} (string str)
+\item 
+static bool \hyperlink{classjmh_utilities_a84bfacd7fd46a2e57085a75ac039019d}{case\+Ins\+Char\+Compare\+N} (char a, char b)
+\item 
+static bool \hyperlink{classjmh_utilities_a6f6160d4c2ab6f72f0825acb99f29dea}{case\+Ins\+Compare} (const string \&s1, const string \&s2)
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classjmh_utilities_a45857044013b42a8f9b3f4fee7942c64}{}\index{jmh\+Utilities@{jmh\+Utilities}!jmh\+Utilities@{jmh\+Utilities}}
+\index{jmh\+Utilities@{jmh\+Utilities}!jmh\+Utilities@{jmh\+Utilities}}
+\subsubsection[{jmh\+Utilities()}]{\setlength{\rightskip}{0pt plus 5cm}jmh\+Utilities\+::jmh\+Utilities (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classjmh_utilities_a45857044013b42a8f9b3f4fee7942c64}
+Net\+Beans-\/supplied default constructor. \hypertarget{classjmh_utilities_adfe2a874ad25990a691342deead683a5}{}\index{jmh\+Utilities@{jmh\+Utilities}!jmh\+Utilities@{jmh\+Utilities}}
+\index{jmh\+Utilities@{jmh\+Utilities}!jmh\+Utilities@{jmh\+Utilities}}
+\subsubsection[{jmh\+Utilities(const jmh\+Utilities \&orig)}]{\setlength{\rightskip}{0pt plus 5cm}jmh\+Utilities\+::jmh\+Utilities (
+\begin{DoxyParamCaption}
+\item[{const {\bf jmh\+Utilities} \&}]{orig}
+\end{DoxyParamCaption}
+)}\label{classjmh_utilities_adfe2a874ad25990a691342deead683a5}
+Net\+Beans-\/supplied copy constructor. \hypertarget{classjmh_utilities_a398e9680ae39464f8bb6496fbc8f69ad}{}\index{jmh\+Utilities@{jmh\+Utilities}!````~jmh\+Utilities@{$\sim$jmh\+Utilities}}
+\index{````~jmh\+Utilities@{$\sim$jmh\+Utilities}!jmh\+Utilities@{jmh\+Utilities}}
+\subsubsection[{$\sim$jmh\+Utilities()}]{\setlength{\rightskip}{0pt plus 5cm}jmh\+Utilities\+::$\sim$jmh\+Utilities (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classjmh_utilities_a398e9680ae39464f8bb6496fbc8f69ad}
+Net\+Beans-\/supplied destructor. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classjmh_utilities_a84bfacd7fd46a2e57085a75ac039019d}{}\index{jmh\+Utilities@{jmh\+Utilities}!case\+Ins\+Char\+Compare\+N@{case\+Ins\+Char\+Compare\+N}}
+\index{case\+Ins\+Char\+Compare\+N@{case\+Ins\+Char\+Compare\+N}!jmh\+Utilities@{jmh\+Utilities}}
+\subsubsection[{case\+Ins\+Char\+Compare\+N(char a, char b)}]{\setlength{\rightskip}{0pt plus 5cm}bool jmh\+Utilities\+::case\+Ins\+Char\+Compare\+N (
+\begin{DoxyParamCaption}
+\item[{char}]{a, }
+\item[{char}]{b}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\label{classjmh_utilities_a84bfacd7fd46a2e57085a75ac039019d}
+Compare two characters in a case-\/insensitive manner by converting them both to uppercase and then testing if they are equal. 
+\begin{DoxyParams}{Parameters}
+{\em a} & the first character to compare \\
+\hline
+{\em b} & the second character to compare \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the two uppercase characters are equal, false otherwise 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\href{https://www.safaribooksonline.com/library/view/c-cookbook/0596007612/ch04s14.html}{\tt https\+://www.\+safaribooksonline.\+com/library/view/c-\/cookbook/0596007612/ch04s14.\+html} 
+\end{DoxySeeAlso}
+\hypertarget{classjmh_utilities_a6f6160d4c2ab6f72f0825acb99f29dea}{}\index{jmh\+Utilities@{jmh\+Utilities}!case\+Ins\+Compare@{case\+Ins\+Compare}}
+\index{case\+Ins\+Compare@{case\+Ins\+Compare}!jmh\+Utilities@{jmh\+Utilities}}
+\subsubsection[{case\+Ins\+Compare(const string \&s1, const string \&s2)}]{\setlength{\rightskip}{0pt plus 5cm}bool jmh\+Utilities\+::case\+Ins\+Compare (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{s1, }
+\item[{const string \&}]{s2}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{classjmh_utilities_a6f6160d4c2ab6f72f0825acb99f29dea}
+Compare two strings in a case-\/insensitive manner using the companion case-\/insensitive character comparison helper function. 
+\begin{DoxyParams}{Parameters}
+{\em s1} & the first string to compare \\
+\hline
+{\em s2} & the second string to compare \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the two uppercase strings are equal, false otherwise 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\href{https://www.safaribooksonline.com/library/view/c-cookbook/0596007612/ch04s14.html}{\tt https\+://www.\+safaribooksonline.\+com/library/view/c-\/cookbook/0596007612/ch04s14.\+html} 
+\end{DoxySeeAlso}
+\hypertarget{classjmh_utilities_a616b99ea8f748dacbbc2775a873d898c}{}\index{jmh\+Utilities@{jmh\+Utilities}!trim@{trim}}
+\index{trim@{trim}!jmh\+Utilities@{jmh\+Utilities}}
+\subsubsection[{trim(string str)}]{\setlength{\rightskip}{0pt plus 5cm}string jmh\+Utilities\+::trim (
+\begin{DoxyParamCaption}
+\item[{string}]{str}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{classjmh_utilities_a616b99ea8f748dacbbc2775a873d898c}
+Trim leading and trailing white space (spaces, tabs, and newlines) from the string passed as an argument and return the trimmed string. This version is more sophisticated than the one above. It uses iterators and an improved search technique. 
+\begin{DoxyParams}{Parameters}
+{\em str} & string to trim (a copy, so that the original is not destroyed) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a copy of the original string with leading and trailing white space removed 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{jmh_utilities_8h}{jmh\+Utilities.\+h}\item 
+\hyperlink{jmh_utilities_8cpp}{jmh\+Utilities.\+cpp}\end{DoxyCompactItemize}
